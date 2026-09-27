@@ -1,0 +1,698 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-27T19:12:06+09:00",
+  "target_round": 1244,
+  "last_round": {
+    "round": 1243,
+    "date": "2026-09-26",
+    "numbers": [
+      9,
+      18,
+      24,
+      38,
+      43,
+      44
+    ],
+    "bonus": 35
+  },
+  "games": [
+    {
+      "rank": 1,
+      "numbers": [
+        2,
+        19,
+        22,
+        28,
+        43,
+        44
+      ],
+      "fitness": 0.8103,
+      "score_sum": 0.8103,
+      "sum": 158,
+      "odd_even": "2:4",
+      "low_high": "3:3"
+    },
+    {
+      "rank": 2,
+      "numbers": [
+        2,
+        4,
+        9,
+        23,
+        32,
+        44
+      ],
+      "fitness": 0.8084,
+      "score_sum": 0.8084,
+      "sum": 114,
+      "odd_even": "2:4",
+      "low_high": "3:3"
+    },
+    {
+      "rank": 3,
+      "numbers": [
+        17,
+        19,
+        22,
+        23,
+        25,
+        32
+      ],
+      "fitness": 0.8074,
+      "score_sum": 0.8074,
+      "sum": 138,
+      "odd_even": "4:2",
+      "low_high": "3:3"
+    },
+    {
+      "rank": 4,
+      "numbers": [
+        2,
+        22,
+        23,
+        30,
+        31,
+        35
+      ],
+      "fitness": 0.8069,
+      "score_sum": 0.8069,
+      "sum": 143,
+      "odd_even": "3:3",
+      "low_high": "2:4"
+    },
+    {
+      "rank": 5,
+      "numbers": [
+        2,
+        21,
+        23,
+        25,
+        42,
+        43
+      ],
+      "fitness": 0.8069,
+      "score_sum": 0.8069,
+      "sum": 156,
+      "odd_even": "4:2",
+      "low_high": "2:4"
+    }
+  ],
+  "number_scores": [
+    {
+      "number": 1,
+      "score": 0.1337,
+      "models": {
+        "weighted": 0.1334,
+        "xgboost": 0.1322,
+        "bayes": 0.1284
+      },
+      "total_count": 170,
+      "recent_10": 1,
+      "current_gap": 9,
+      "max_gap": 36
+    },
+    {
+      "number": 2,
+      "score": 0.1355,
+      "models": {
+        "weighted": 0.1333,
+        "xgboost": 0.1342,
+        "bayes": 0.11
+      },
+      "total_count": 157,
+      "recent_10": 2,
+      "current_gap": 1,
+      "max_gap": 48
+    },
+    {
+      "number": 3,
+      "score": 0.1323,
+      "models": {
+        "weighted": 0.1336,
+        "xgboost": 0.1341,
+        "bayes": 0.1459
+      },
+      "total_count": 172,
+      "recent_10": 0,
+      "current_gap": 13,
+      "max_gap": 28
+    },
+    {
+      "number": 4,
+      "score": 0.1342,
+      "models": {
+        "weighted": 0.1335,
+        "xgboost": 0.1374,
+        "bayes": 0.1253
+      },
+      "total_count": 163,
+      "recent_10": 1,
+      "current_gap": 1,
+      "max_gap": 35
+    },
+    {
+      "number": 5,
+      "score": 0.1337,
+      "models": {
+        "weighted": 0.1339,
+        "xgboost": 0.1317,
+        "bayes": 0.1274
+      },
+      "total_count": 153,
+      "recent_10": 0,
+      "current_gap": 30,
+      "max_gap": 73
+    },
+    {
+      "number": 6,
+      "score": 0.1322,
+      "models": {
+        "weighted": 0.1334,
+        "xgboost": 0.1322,
+        "bayes": 0.1458
+      },
+      "total_count": 166,
+      "recent_10": 1,
+      "current_gap": 8,
+      "max_gap": 37
+    },
+    {
+      "number": 7,
+      "score": 0.1338,
+      "models": {
+        "weighted": 0.1331,
+        "xgboost": 0.1326,
+        "bayes": 0.1277
+      },
+      "total_count": 171,
+      "recent_10": 2,
+      "current_gap": 2,
+      "max_gap": 38
+    },
+    {
+      "number": 8,
+      "score": 0.1328,
+      "models": {
+        "weighted": 0.1337,
+        "xgboost": 0.1324,
+        "bayes": 0.1385
+      },
+      "total_count": 158,
+      "recent_10": 0,
+      "current_gap": 13,
+      "max_gap": 28
+    },
+    {
+      "number": 9,
+      "score": 0.134,
+      "models": {
+        "weighted": 0.1337,
+        "xgboost": 0.1343,
+        "bayes": 0.1262
+      },
+      "total_count": 137,
+      "recent_10": 1,
+      "current_gap": 0,
+      "max_gap": 49
+    },
+    {
+      "number": 10,
+      "score": 0.1337,
+      "models": {
+        "weighted": 0.1331,
+        "xgboost": 0.1339,
+        "bayes": 0.1292
+      },
+      "total_count": 163,
+      "recent_10": 2,
+      "current_gap": 1,
+      "max_gap": 46
+    },
+    {
+      "number": 11,
+      "score": 0.1331,
+      "models": {
+        "weighted": 0.1329,
+        "xgboost": 0.1348,
+        "bayes": 0.1363
+      },
+      "total_count": 168,
+      "recent_10": 3,
+      "current_gap": 3,
+      "max_gap": 40
+    },
+    {
+      "number": 12,
+      "score": 0.1317,
+      "models": {
+        "weighted": 0.1332,
+        "xgboost": 0.1296,
+        "bayes": 0.15
+      },
+      "total_count": 180,
+      "recent_10": 1,
+      "current_gap": 7,
+      "max_gap": 30
+    },
+    {
+      "number": 13,
+      "score": 0.1313,
+      "models": {
+        "weighted": 0.1323,
+        "xgboost": 0.1351,
+        "bayes": 0.1593
+      },
+      "total_count": 183,
+      "recent_10": 4,
+      "current_gap": 2,
+      "max_gap": 33
+    },
+    {
+      "number": 14,
+      "score": 0.1334,
+      "models": {
+        "weighted": 0.1336,
+        "xgboost": 0.1334,
+        "bayes": 0.1314
+      },
+      "total_count": 172,
+      "recent_10": 0,
+      "current_gap": 12,
+      "max_gap": 38
+    },
+    {
+      "number": 15,
+      "score": 0.1326,
+      "models": {
+        "weighted": 0.133,
+        "xgboost": 0.1355,
+        "bayes": 0.1431
+      },
+      "total_count": 170,
+      "recent_10": 2,
+      "current_gap": 8,
+      "max_gap": 37
+    },
+    {
+      "number": 16,
+      "score": 0.1334,
+      "models": {
+        "weighted": 0.1332,
+        "xgboost": 0.1329,
+        "bayes": 0.1322
+      },
+      "total_count": 170,
+      "recent_10": 2,
+      "current_gap": 1,
+      "max_gap": 39
+    },
+    {
+      "number": 17,
+      "score": 0.1339,
+      "models": {
+        "weighted": 0.1336,
+        "xgboost": 0.1365,
+        "bayes": 0.1279
+      },
+      "total_count": 171,
+      "recent_10": 0,
+      "current_gap": 17,
+      "max_gap": 39
+    },
+    {
+      "number": 18,
+      "score": 0.1325,
+      "models": {
+        "weighted": 0.1327,
+        "xgboost": 0.1371,
+        "bayes": 0.1458
+      },
+      "total_count": 179,
+      "recent_10": 3,
+      "current_gap": 0,
+      "max_gap": 57
+    },
+    {
+      "number": 19,
+      "score": 0.135,
+      "models": {
+        "weighted": 0.1331,
+        "xgboost": 0.1329,
+        "bayes": 0.115
+      },
+      "total_count": 171,
+      "recent_10": 2,
+      "current_gap": 3,
+      "max_gap": 41
+    },
+    {
+      "number": 20,
+      "score": 0.1323,
+      "models": {
+        "weighted": 0.1331,
+        "xgboost": 0.1329,
+        "bayes": 0.1444
+      },
+      "total_count": 172,
+      "recent_10": 2,
+      "current_gap": 3,
+      "max_gap": 27
+    },
+    {
+      "number": 21,
+      "score": 0.1339,
+      "models": {
+        "weighted": 0.1334,
+        "xgboost": 0.1351,
+        "bayes": 0.127
+      },
+      "total_count": 167,
+      "recent_10": 1,
+      "current_gap": 7,
+      "max_gap": 37
+    },
+    {
+      "number": 22,
+      "score": 0.1353,
+      "models": {
+        "weighted": 0.1336,
+        "xgboost": 0.1311,
+        "bayes": 0.111
+      },
+      "total_count": 146,
+      "recent_10": 1,
+      "current_gap": 4,
+      "max_gap": 50
+    },
+    {
+      "number": 23,
+      "score": 0.1348,
+      "models": {
+        "weighted": 0.1333,
+        "xgboost": 0.1348,
+        "bayes": 0.1174
+      },
+      "total_count": 149,
+      "recent_10": 2,
+      "current_gap": 2,
+      "max_gap": 48
+    },
+    {
+      "number": 24,
+      "score": 0.1323,
+      "models": {
+        "weighted": 0.1332,
+        "xgboost": 0.1326,
+        "bayes": 0.1447
+      },
+      "total_count": 168,
+      "recent_10": 2,
+      "current_gap": 0,
+      "max_gap": 41
+    },
+    {
+      "number": 25,
+      "score": 0.134,
+      "models": {
+        "weighted": 0.1338,
+        "xgboost": 0.1341,
+        "bayes": 0.1255
+      },
+      "total_count": 153,
+      "recent_10": 0,
+      "current_gap": 10,
+      "max_gap": 53
+    },
+    {
+      "number": 26,
+      "score": 0.1335,
+      "models": {
+        "weighted": 0.1337,
+        "xgboost": 0.1337,
+        "bayes": 0.1315
+      },
+      "total_count": 165,
+      "recent_10": 0,
+      "current_gap": 17,
+      "max_gap": 33
+    },
+    {
+      "number": 27,
+      "score": 0.1316,
+      "models": {
+        "weighted": 0.1335,
+        "xgboost": 0.1328,
+        "bayes": 0.153
+      },
+      "total_count": 181,
+      "recent_10": 0,
+      "current_gap": 19,
+      "max_gap": 43
+    },
+    {
+      "number": 28,
+      "score": 0.1342,
+      "models": {
+        "weighted": 0.1337,
+        "xgboost": 0.1346,
+        "bayes": 0.1233
+      },
+      "total_count": 157,
+      "recent_10": 0,
+      "current_gap": 13,
+      "max_gap": 38
+    },
+    {
+      "number": 29,
+      "score": 0.133,
+      "models": {
+        "weighted": 0.1334,
+        "xgboost": 0.1319,
+        "bayes": 0.1353
+      },
+      "total_count": 156,
+      "recent_10": 1,
+      "current_gap": 7,
+      "max_gap": 34
+    },
+    {
+      "number": 30,
+      "score": 0.1338,
+      "models": {
+        "weighted": 0.1336,
+        "xgboost": 0.1337,
+        "bayes": 0.1281
+      },
+      "total_count": 158,
+      "recent_10": 0,
+      "current_gap": 15,
+      "max_gap": 41
+    },
+    {
+      "number": 31,
+      "score": 0.1338,
+      "models": {
+        "weighted": 0.1327,
+        "xgboost": 0.1318,
+        "bayes": 0.1267
+      },
+      "total_count": 171,
+      "recent_10": 3,
+      "current_gap": 1,
+      "max_gap": 29
+    },
+    {
+      "number": 32,
+      "score": 0.1345,
+      "models": {
+        "weighted": 0.1333,
+        "xgboost": 0.1324,
+        "bayes": 0.1199
+      },
+      "total_count": 146,
+      "recent_10": 2,
+      "current_gap": 4,
+      "max_gap": 41
+    },
+    {
+      "number": 33,
+      "score": 0.1313,
+      "models": {
+        "weighted": 0.1334,
+        "xgboost": 0.1335,
+        "bayes": 0.1589
+      },
+      "total_count": 175,
+      "recent_10": 1,
+      "current_gap": 4,
+      "max_gap": 45
+    },
+    {
+      "number": 34,
+      "score": 0.1311,
+      "models": {
+        "weighted": 0.1329,
+        "xgboost": 0.1327,
+        "bayes": 0.1608
+      },
+      "total_count": 186,
+      "recent_10": 2,
+      "current_gap": 6,
+      "max_gap": 42
+    },
+    {
+      "number": 35,
+      "score": 0.1337,
+      "models": {
+        "weighted": 0.1334,
+        "xgboost": 0.1317,
+        "bayes": 0.1274
+      },
+      "total_count": 163,
+      "recent_10": 1,
+      "current_gap": 9,
+      "max_gap": 30
+    },
+    {
+      "number": 36,
+      "score": 0.1334,
+      "models": {
+        "weighted": 0.1336,
+        "xgboost": 0.1333,
+        "bayes": 0.1322
+      },
+      "total_count": 165,
+      "recent_10": 1,
+      "current_gap": 4,
+      "max_gap": 34
+    },
+    {
+      "number": 37,
+      "score": 0.1322,
+      "models": {
+        "weighted": 0.1334,
+        "xgboost": 0.1324,
+        "bayes": 0.1462
+      },
+      "total_count": 174,
+      "recent_10": 1,
+      "current_gap": 6,
+      "max_gap": 35
+    },
+    {
+      "number": 38,
+      "score": 0.1329,
+      "models": {
+        "weighted": 0.1329,
+        "xgboost": 0.1312,
+        "bayes": 0.1368
+      },
+      "total_count": 173,
+      "recent_10": 3,
+      "current_gap": 0,
+      "max_gap": 32
+    },
+    {
+      "number": 39,
+      "score": 0.1329,
+      "models": {
+        "weighted": 0.1334,
+        "xgboost": 0.1334,
+        "bayes": 0.1381
+      },
+      "total_count": 168,
+      "recent_10": 1,
+      "current_gap": 8,
+      "max_gap": 48
+    },
+    {
+      "number": 40,
+      "score": 0.1329,
+      "models": {
+        "weighted": 0.1334,
+        "xgboost": 0.1324,
+        "bayes": 0.1367
+      },
+      "total_count": 174,
+      "recent_10": 1,
+      "current_gap": 6,
+      "max_gap": 59
+    },
+    {
+      "number": 41,
+      "score": 0.1332,
+      "models": {
+        "weighted": 0.1336,
+        "xgboost": 0.1334,
+        "bayes": 0.1339
+      },
+      "total_count": 151,
+      "recent_10": 1,
+      "current_gap": 1,
+      "max_gap": 31
+    },
+    {
+      "number": 42,
+      "score": 0.1337,
+      "models": {
+        "weighted": 0.1334,
+        "xgboost": 0.1326,
+        "bayes": 0.1279
+      },
+      "total_count": 158,
+      "recent_10": 1,
+      "current_gap": 5,
+      "max_gap": 36
+    },
+    {
+      "number": 43,
+      "score": 0.1349,
+      "models": {
+        "weighted": 0.1328,
+        "xgboost": 0.1349,
+        "bayes": 0.1173
+      },
+      "total_count": 167,
+      "recent_10": 4,
+      "current_gap": 0,
+      "max_gap": 38
+    },
+    {
+      "number": 44,
+      "score": 0.1355,
+      "models": {
+        "weighted": 0.1331,
+        "xgboost": 0.1302,
+        "bayes": 0.1089
+      },
+      "total_count": 166,
+      "recent_10": 2,
+      "current_gap": 0,
+      "max_gap": 38
+    },
+    {
+      "number": 45,
+      "score": 0.1326,
+      "models": {
+        "weighted": 0.1335,
+        "xgboost": 0.1341,
+        "bayes": 0.1416
+      },
+      "total_count": 175,
+      "recent_10": 0,
+      "current_gap": 19,
+      "max_gap": 38
+    }
+  ],
+  "backtest": {
+    "rounds_tested": 200,
+    "avg_matches": 0.756,
+    "random_avg_matches": 0.8,
+    "hit3_rate": 0.023,
+    "random_hit3_rate": 0.0238,
+    "logloss": 0.3927,
+    "random_logloss": 0.3927,
+    "beats_random": false
+  },
+  "disclaimer": "본 추천은 과거 통계 기반 참고용이며 당첨을 보장하지 않습니다. 로또 추첨은 매 회 독립적인 무작위 시행입니다."
+}
