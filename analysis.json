@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-27T20:23:47+09:00",
+  "generated_at": "2026-09-27T23:21:47+09:00",
   "target_round": 1244,
   "last_round": {
     "round": 1243,
@@ -17,13 +17,27 @@
   },
   "recommendation_method": {
     "base_method": "ensemble",
-    "optimizer": "coverage",
-    "reason": "어떤 방법도 무작위보다 유의하게 좋지 않아 기본값(ensemble)을 사용. 최종 5게임은 커버리지 최적화로 겹침을 최소화",
-    "rule": "방법별 백테스트에서 BH 보정 p<0.05 로 무작위보다 평균 일치 수가 유의하게 높은 점수 방법 중 최고를 기준으로 삼고, 없으면 ensemble. 그 적합도(패널티 반영) 후보에서 '적어도 한 게임 3개 이상 일치' 확률을 최대화하도록 겹침을 최소화해 5게임을 고른다. 과거 1등 조합은 제외.",
+    "optimizer": "coverage4",
+    "reason": "어떤 방법도 무작위보다 유의하게 좋지 않아 기본값(ensemble)을 사용",
+    "rule": "방법별 백테스트에서 BH 보정 p<0.05 로 무작위보다 평균 일치 수가 유의하게 높은 점수 방법 중 최고를 기준 점수로 삼고, 없으면 ensemble. 목표는 4등 이상(4개 이상 일치): N=5/10/20 마다 score_top·coverage4·wheel 후보 묶음을 만들고, 4등 이상 백테스트에서 BH 보정 후 무작위보다 유의한 전략이 있으면 그 전략, 없으면 전수 계산한 P(적어도 한 게임 ≥4)가 가장 큰 전략을 쓴다. 게임 간 공유 번호 ≤3(휠 제외), 과거 1등 조합 제외.",
+    "set_strategies": {
+      "5": {
+        "strategy": "coverage4",
+        "reason": "백테스트에서 유의한 전략이 없어, 정확히 계산한 P(적어도 한 게임 4개 이상)=0.006954 가 가장 큰 coverage4 선택"
+      },
+      "10": {
+        "strategy": "coverage4",
+        "reason": "백테스트에서 유의한 전략이 없어, 정확히 계산한 P(적어도 한 게임 4개 이상)=0.013895 가 가장 큰 coverage4 선택"
+      },
+      "20": {
+        "strategy": "coverage4",
+        "reason": "백테스트에서 유의한 전략이 없어, 정확히 계산한 P(적어도 한 게임 4개 이상)=0.027742 가 가장 큰 coverage4 선택"
+      }
+    },
     "selected_compositions": [],
     "games_exact": {
-      "p_any_ge3": 0.118679,
-      "p_any_ge4": 0.006967,
+      "p_any_ge3": 0.11148,
+      "p_any_ge4": 0.006954,
       "p_any_ge5": 0.000144,
       "p_any_ge6": 1e-06,
       "expected_tickets_ge3": 0.11917,
@@ -3552,23 +3566,7 @@
             "efficiency": 1.058
           },
           {
-            "code": "1021110",
-            "combinations": 50421,
-            "theoretical_prob": 0.00619,
-            "expected_count": 7.69,
-            "observed_count": 6,
-            "efficiency": 0.78
-          },
-          {
-            "code": "1101210",
-            "combinations": 50421,
-            "theoretical_prob": 0.00619,
-            "expected_count": 7.69,
-            "observed_count": 7,
-            "efficiency": 0.91
-          },
-          {
-            "code": "1011111",
+            "code": "0121110",
             "combinations": 50421,
             "theoretical_prob": 0.00619,
             "expected_count": 7.69,
@@ -3576,52 +3574,12 @@
             "efficiency": 0.52
           },
           {
-            "code": "1110111",
-            "combinations": 50421,
-            "theoretical_prob": 0.00619,
-            "expected_count": 7.69,
-            "observed_count": 15,
-            "efficiency": 1.949
-          },
-          {
-            "code": "1110120",
+            "code": "1111200",
             "combinations": 50421,
             "theoretical_prob": 0.00619,
             "expected_count": 7.69,
             "observed_count": 6,
             "efficiency": 0.78
-          },
-          {
-            "code": "1110210",
-            "combinations": 50421,
-            "theoretical_prob": 0.00619,
-            "expected_count": 7.69,
-            "observed_count": 7,
-            "efficiency": 0.91
-          },
-          {
-            "code": "1102110",
-            "combinations": 50421,
-            "theoretical_prob": 0.00619,
-            "expected_count": 7.69,
-            "observed_count": 10,
-            "efficiency": 1.3
-          },
-          {
-            "code": "1101111",
-            "combinations": 50421,
-            "theoretical_prob": 0.00619,
-            "expected_count": 7.69,
-            "observed_count": 10,
-            "efficiency": 1.3
-          },
-          {
-            "code": "1101120",
-            "combinations": 50421,
-            "theoretical_prob": 0.00619,
-            "expected_count": 7.69,
-            "observed_count": 8,
-            "efficiency": 1.04
           },
           {
             "code": "1112010",
@@ -3632,23 +3590,47 @@
             "efficiency": 0.91
           },
           {
-            "code": "1112100",
+            "code": "1211010",
             "combinations": 50421,
             "theoretical_prob": 0.00619,
             "expected_count": 7.69,
-            "observed_count": 13,
-            "efficiency": 1.689
+            "observed_count": 2,
+            "efficiency": 0.26
           },
           {
-            "code": "1120110",
+            "code": "1111101",
             "combinations": 50421,
             "theoretical_prob": 0.00619,
             "expected_count": 7.69,
-            "observed_count": 7,
-            "efficiency": 0.91
+            "observed_count": 9,
+            "efficiency": 1.17
           },
           {
-            "code": "1121010",
+            "code": "1211100",
+            "combinations": 50421,
+            "theoretical_prob": 0.00619,
+            "expected_count": 7.69,
+            "observed_count": 2,
+            "efficiency": 0.26
+          },
+          {
+            "code": "1201110",
+            "combinations": 50421,
+            "theoretical_prob": 0.00619,
+            "expected_count": 7.69,
+            "observed_count": 10,
+            "efficiency": 1.3
+          },
+          {
+            "code": "0111111",
+            "combinations": 50421,
+            "theoretical_prob": 0.00619,
+            "expected_count": 7.69,
+            "observed_count": 15,
+            "efficiency": 1.949
+          },
+          {
+            "code": "1210110",
             "combinations": 50421,
             "theoretical_prob": 0.00619,
             "expected_count": 7.69,
@@ -3656,17 +3638,49 @@
             "efficiency": 1.43
           },
           {
-            "code": "1111020",
+            "code": "0111210",
+            "combinations": 50421,
+            "theoretical_prob": 0.00619,
+            "expected_count": 7.69,
+            "observed_count": 6,
+            "efficiency": 0.78
+          },
+          {
+            "code": "0112110",
             "combinations": 50421,
             "theoretical_prob": 0.00619,
             "expected_count": 7.69,
             "observed_count": 7,
             "efficiency": 0.91
+          },
+          {
+            "code": "1021110",
+            "combinations": 50421,
+            "theoretical_prob": 0.00619,
+            "expected_count": 7.69,
+            "observed_count": 6,
+            "efficiency": 0.78
+          },
+          {
+            "code": "0111120",
+            "combinations": 50421,
+            "theoretical_prob": 0.00619,
+            "expected_count": 7.69,
+            "observed_count": 4,
+            "efficiency": 0.52
+          },
+          {
+            "code": "2011110",
+            "combinations": 50421,
+            "theoretical_prob": 0.00619,
+            "expected_count": 7.69,
+            "observed_count": 8,
+            "efficiency": 1.04
           }
         ],
         "typical_set_mass": 0.6,
         "typical_set_size": 174,
-        "observed_share_in_typical_set": 0.6018,
+        "observed_share_in_typical_set": 0.6106,
         "chi2_gof": {
           "statistic": 41.652,
           "df": 37,
@@ -3697,12 +3711,12 @@
             "efficiency": 1.415
           },
           {
-            "code": "1111011",
+            "code": "1111110",
             "combinations": 74088,
             "theoretical_prob": 0.009096,
             "expected_count": 11.31,
-            "observed_count": 12,
-            "efficiency": 1.061
+            "observed_count": 13,
+            "efficiency": 1.15
           },
           {
             "code": "1111101",
@@ -3713,12 +3727,12 @@
             "efficiency": 0.531
           },
           {
-            "code": "1111110",
+            "code": "1111011",
             "combinations": 74088,
             "theoretical_prob": 0.009096,
             "expected_count": 11.31,
-            "observed_count": 13,
-            "efficiency": 1.15
+            "observed_count": 12,
+            "efficiency": 1.061
           },
           {
             "code": "0111111",
@@ -3745,14 +3759,6 @@
             "efficiency": 0.825
           },
           {
-            "code": "1211100",
-            "combinations": 37044,
-            "theoretical_prob": 0.004548,
-            "expected_count": 5.65,
-            "observed_count": 8,
-            "efficiency": 1.415
-          },
-          {
             "code": "1121010",
             "combinations": 37044,
             "theoretical_prob": 0.004548,
@@ -3761,20 +3767,12 @@
             "efficiency": 0.354
           },
           {
-            "code": "1210110",
+            "code": "1210011",
             "combinations": 37044,
             "theoretical_prob": 0.004548,
             "expected_count": 5.65,
-            "observed_count": 6,
-            "efficiency": 1.061
-          },
-          {
-            "code": "1210101",
-            "combinations": 37044,
-            "theoretical_prob": 0.004548,
-            "expected_count": 5.65,
-            "observed_count": 4,
-            "efficiency": 0.708
+            "observed_count": 7,
+            "efficiency": 1.238
           },
           {
             "code": "1211001",
@@ -3785,7 +3783,15 @@
             "efficiency": 0.884
           },
           {
-            "code": "1211010",
+            "code": "1211100",
+            "combinations": 37044,
+            "theoretical_prob": 0.004548,
+            "expected_count": 5.65,
+            "observed_count": 8,
+            "efficiency": 1.415
+          },
+          {
+            "code": "2111100",
             "combinations": 37044,
             "theoretical_prob": 0.004548,
             "expected_count": 5.65,
@@ -3793,12 +3799,20 @@
             "efficiency": 1.238
           },
           {
-            "code": "1210011",
+            "code": "2110011",
             "combinations": 37044,
             "theoretical_prob": 0.004548,
             "expected_count": 5.65,
-            "observed_count": 7,
-            "efficiency": 1.238
+            "observed_count": 4,
+            "efficiency": 0.708
+          },
+          {
+            "code": "1121100",
+            "combinations": 37044,
+            "theoretical_prob": 0.004548,
+            "expected_count": 5.65,
+            "observed_count": 3,
+            "efficiency": 0.531
           },
           {
             "code": "1120110",
@@ -3811,7 +3825,7 @@
         ],
         "typical_set_mass": 0.6,
         "typical_set_size": 200,
-        "observed_share_in_typical_set": 0.5945,
+        "observed_share_in_typical_set": 0.5889,
         "chi2_gof": {
           "statistic": 23.0127,
           "df": 25,
@@ -6080,24 +6094,16 @@
         },
         {
           "pair": [
-            12,
-            24
-          ],
-          "count": 31,
-          "expected": 18.83
-        },
-        {
-          "pair": [
-            10,
-            31
-          ],
-          "count": 31,
-          "expected": 18.83
-        },
-        {
-          "pair": [
             37,
             40
+          ],
+          "count": 31,
+          "expected": 18.83
+        },
+        {
+          "pair": [
+            12,
+            24
           ],
           "count": 31,
           "expected": 18.83
@@ -6112,10 +6118,10 @@
         },
         {
           "pair": [
-            1,
-            28
+            10,
+            31
           ],
-          "count": 30,
+          "count": 31,
           "expected": 18.83
         },
         {
@@ -6128,16 +6134,24 @@
         },
         {
           "pair": [
-            19,
-            21
+            1,
+            28
           ],
-          "count": 29,
+          "count": 30,
           "expected": 18.83
         },
         {
           "pair": [
             3,
             13
+          ],
+          "count": 29,
+          "expected": 18.83
+        },
+        {
+          "pair": [
+            24,
+            27
           ],
           "count": 29,
           "expected": 18.83
@@ -6154,14 +6168,6 @@
         },
         {
           "pair": [
-            26,
-            32
-          ],
-          "count": 8,
-          "expected": 18.83
-        },
-        {
-          "pair": [
             8,
             26
           ],
@@ -6170,16 +6176,16 @@
         },
         {
           "pair": [
-            23,
-            41
+            26,
+            32
           ],
-          "count": 9,
+          "count": 8,
           "expected": 18.83
         },
         {
           "pair": [
-            11,
-            40
+            3,
+            25
           ],
           "count": 9,
           "expected": 18.83
@@ -6194,6 +6200,14 @@
         },
         {
           "pair": [
+            1,
+            22
+          ],
+          "count": 9,
+          "expected": 18.83
+        },
+        {
+          "pair": [
             6,
             33
           ],
@@ -6202,16 +6216,16 @@
         },
         {
           "pair": [
-            3,
-            25
+            23,
+            41
           ],
           "count": 9,
           "expected": 18.83
         },
         {
           "pair": [
-            1,
-            22
+            11,
+            40
           ],
           "count": 9,
           "expected": 18.83
@@ -6770,18 +6784,18 @@
       {
         "method": "coverage",
         "games": 1000,
-        "avg_matches": 0.803,
+        "avg_matches": 0.802,
         "p_ge3": 0.025,
         "p_ge4": 0.001,
         "any_ge3_rate": 0.12,
-        "p_value_avg": 0.4518,
+        "p_value_avg": 0.4678,
         "p_value_ge3": 0.4324,
         "p_value_ge4": 0.752,
         "p_value_any_ge3": 0.4205,
         "match_distribution": {
           "0": 401,
-          "1": 421,
-          "2": 153,
+          "1": 422,
+          "2": 152,
           "3": 24,
           "4": 1,
           "5": 0,
@@ -6843,44 +6857,44 @@
         "pool": null,
         "tickets": [
           [
-            1,
-            11,
-            23,
-            28,
+            8,
+            20,
+            24,
+            31,
             40,
+            41
+          ],
+          [
+            15,
+            16,
+            22,
+            35,
+            36,
+            39
+          ],
+          [
+            1,
+            2,
+            10,
+            21,
+            23,
+            43
+          ],
+          [
+            3,
+            14,
+            17,
+            19,
+            33,
             42
           ],
           [
-            2,
-            9,
-            13,
-            24,
-            30,
-            35
-          ],
-          [
-            12,
-            16,
-            26,
-            27,
-            41,
-            44
-          ],
-          [
             4,
-            7,
-            8,
-            31,
-            37,
-            38
-          ],
-          [
             5,
-            14,
-            32,
-            36,
-            39,
-            43
+            18,
+            26,
+            30,
+            37
           ]
         ],
         "max_pairwise_overlap": 0,
@@ -6994,88 +7008,88 @@
         "pool": null,
         "tickets": [
           [
-            2,
             8,
             13,
-            19,
+            15,
+            22,
             26,
-            44
+            38
           ],
           [
-            7,
-            9,
-            25,
-            28,
-            32,
-            40
+            4,
+            11,
+            12,
+            35,
+            37,
+            39
           ],
           [
             1,
-            4,
             9,
-            22,
-            36,
+            20,
+            40,
+            41,
             44
           ],
           [
-            12,
+            14,
             16,
             17,
+            26,
             31,
-            34,
-            37
-          ],
-          [
-            5,
-            6,
-            12,
-            29,
-            30,
             43
           ],
           [
-            14,
-            15,
-            20,
-            21,
-            32,
-            36
+            11,
+            18,
+            19,
+            27,
+            33,
+            42
           ],
           [
             2,
-            17,
-            20,
-            25,
-            41,
-            42
-          ],
-          [
-            11,
-            24,
-            26,
-            33,
-            35,
-            40
-          ],
-          [
             3,
-            8,
-            10,
-            11,
-            39,
-            42
+            21,
+            22,
+            28,
+            43
           ],
           [
-            18,
-            19,
+            2,
+            7,
+            10,
+            25,
+            29,
+            32
+          ],
+          [
+            13,
             23,
-            27,
+            24,
+            30,
+            31,
+            36
+          ],
+          [
+            7,
+            20,
+            21,
+            30,
             38,
             45
+          ],
+          [
+            1,
+            5,
+            6,
+            34,
+            39,
+            42
           ]
         ],
         "max_pairwise_overlap": 1,
-        "p_any_ge3": 0.230085,
+        "p_any_ge3": 0.230101,
         "p_any_ge4": 0.013935,
         "p_any_ge5": 0.000289,
         "p_any_ge6": 1e-06,
@@ -7227,169 +7241,169 @@
         "pool": null,
         "tickets": [
           [
-            3,
-            4,
-            23,
-            32,
-            44,
-            45
-          ],
-          [
-            7,
-            20,
-            26,
-            27,
-            32,
-            36
-          ],
-          [
-            10,
-            15,
-            16,
-            18,
-            39,
-            42
-          ],
-          [
-            7,
-            8,
-            12,
-            13,
-            20,
-            42
-          ],
-          [
-            5,
-            8,
+            2,
             11,
-            16,
-            31,
-            43
-          ],
-          [
-            3,
-            14,
-            29,
-            30,
             34,
-            40
-          ],
-          [
-            4,
-            24,
-            27,
-            29,
-            38,
-            39
-          ],
-          [
-            10,
-            11,
-            22,
-            25,
-            27,
-            40
-          ],
-          [
-            1,
-            21,
-            30,
-            33,
-            42,
-            43
-          ],
-          [
-            12,
-            17,
-            24,
-            28,
             37,
-            43
+            43,
+            45
           ],
           [
             2,
             6,
-            31,
-            36,
-            40,
+            10,
+            27,
+            30,
+            35
+          ],
+          [
+            5,
+            18,
+            20,
+            27,
+            34,
+            44
+          ],
+          [
+            5,
+            14,
+            21,
+            32,
+            37,
+            40
+          ],
+          [
+            3,
+            13,
+            25,
+            28,
+            30,
+            44
+          ],
+          [
+            4,
+            11,
+            12,
+            15,
+            26,
+            40
+          ],
+          [
+            8,
+            22,
+            29,
+            30,
+            33,
             41
           ],
           [
-            2,
-            7,
-            14,
-            22,
-            33,
-            38
-          ],
-          [
-            9,
+            4,
             10,
-            33,
-            35,
-            37,
+            21,
+            31,
+            38,
             44
           ],
           [
-            5,
-            15,
-            17,
-            21,
-            34,
-            36
-          ],
-          [
-            4,
-            14,
-            16,
-            19,
-            25,
-            35
-          ],
-          [
+            7,
             8,
-            9,
-            26,
-            30,
-            41,
+            12,
+            39,
+            42,
             45
           ],
           [
-            6,
-            13,
-            23,
-            25,
-            34,
+            15,
+            17,
+            24,
+            35,
+            37,
             38
           ],
           [
             3,
-            15,
-            22,
-            28,
+            23,
             31,
-            35
-          ],
-          [
-            6,
-            11,
-            19,
-            28,
-            29,
+            34,
+            36,
             42
           ],
           [
-            1,
-            5,
-            18,
-            24,
+            6,
+            14,
+            19,
+            22,
+            28,
+            39
+          ],
+          [
+            9,
+            10,
+            16,
+            19,
+            25,
+            33
+          ],
+          [
+            2,
+            16,
+            20,
+            21,
             26,
-            44
+            41
+          ],
+          [
+            4,
+            14,
+            20,
+            33,
+            35,
+            36
+          ],
+          [
+            1,
+            6,
+            8,
+            17,
+            26,
+            43
+          ],
+          [
+            7,
+            11,
+            22,
+            23,
+            25,
+            32
+          ],
+          [
+            1,
+            16,
+            18,
+            30,
+            31,
+            39
+          ],
+          [
+            5,
+            9,
+            13,
+            36,
+            38,
+            45
+          ],
+          [
+            1,
+            19,
+            24,
+            29,
+            40,
+            42
           ]
         ],
-        "max_pairwise_overlap": 2,
-        "p_any_ge3": 0.424809,
-        "p_any_ge4": 0.027865,
+        "max_pairwise_overlap": 1,
+        "p_any_ge3": 0.425632,
+        "p_any_ge4": 0.02787,
         "p_any_ge5": 0.000577,
         "p_any_ge6": 2e-06,
         "expected_tickets_ge3": 0.476682,
@@ -7598,6 +7612,1436 @@
       "spread 는 '적어도 한 게임' 확률을 올리는 대신 동시 당첨 확률을 낮춘다.",
       "wheel 보장은 '풀에서 t개 이상 나올 때'라는 조건부 보장이며 무조건 보장이 아니다."
     ]
+  },
+  "ge4": {
+    "target": "4개 이상 일치(4등 이상)",
+    "p_ge4_per_ticket": 0.0013935,
+    "chosen": {
+      "5": {
+        "strategy": "coverage4",
+        "reason": "백테스트에서 유의한 전략이 없어, 정확히 계산한 P(적어도 한 게임 4개 이상)=0.006954 가 가장 큰 coverage4 선택"
+      },
+      "10": {
+        "strategy": "coverage4",
+        "reason": "백테스트에서 유의한 전략이 없어, 정확히 계산한 P(적어도 한 게임 4개 이상)=0.013895 가 가장 큰 coverage4 선택"
+      },
+      "20": {
+        "strategy": "coverage4",
+        "reason": "백테스트에서 유의한 전략이 없어, 정확히 계산한 P(적어도 한 게임 4개 이상)=0.027742 가 가장 큰 coverage4 선택"
+      }
+    },
+    "candidates": {
+      "5": {
+        "score_top": {
+          "p_any_ge4": 0.0065634,
+          "p_any_ge5": 0.00014426,
+          "p_any_ge3": 0.090199,
+          "expected_tickets_ge4": 0.0069674,
+          "random_independent_p_any_ge4": 0.006948,
+          "upper_bound_p_any_ge4": 0.0069674,
+          "max_shared": 3,
+          "tickets": [
+            [
+              2,
+              19,
+              22,
+              23,
+              28,
+              44
+            ],
+            [
+              2,
+              19,
+              32,
+              35,
+              43,
+              44
+            ],
+            [
+              2,
+              4,
+              7,
+              22,
+              43,
+              44
+            ],
+            [
+              9,
+              22,
+              23,
+              32,
+              43,
+              44
+            ],
+            [
+              1,
+              19,
+              22,
+              31,
+              43,
+              44
+            ]
+          ]
+        },
+        "coverage4": {
+          "p_any_ge4": 0.0069542,
+          "p_any_ge5": 0.00014426,
+          "p_any_ge3": 0.11148,
+          "expected_tickets_ge4": 0.0069674,
+          "random_independent_p_any_ge4": 0.006948,
+          "upper_bound_p_any_ge4": 0.0069674,
+          "max_shared": 2,
+          "tickets": [
+            [
+              2,
+              5,
+              7,
+              17,
+              23,
+              44
+            ],
+            [
+              2,
+              10,
+              16,
+              23,
+              34,
+              35
+            ],
+            [
+              3,
+              5,
+              34,
+              36,
+              43,
+              44
+            ],
+            [
+              1,
+              4,
+              8,
+              23,
+              27,
+              39
+            ],
+            [
+              3,
+              4,
+              6,
+              23,
+              32,
+              37
+            ]
+          ]
+        },
+        "wheel": {
+          "p_any_ge4": 0.0059042,
+          "p_any_ge5": 0.00014131,
+          "p_any_ge3": 0.073429,
+          "expected_tickets_ge4": 0.0069674,
+          "random_independent_p_any_ge4": 0.006948,
+          "upper_bound_p_any_ge4": 0.0069674,
+          "max_shared": 4,
+          "pool": [
+            2,
+            19,
+            22,
+            23,
+            28,
+            32,
+            35,
+            43,
+            44
+          ],
+          "guarantees": [
+            {
+              "if_pool_hits": 3,
+              "guaranteed_matches": 2,
+              "prob_pool_hits_at_least": 0.083948,
+              "statement": "풀 9개 중 3개가 당첨번호이면, 적어도 한 게임은 2개 이상 일치"
+            },
+            {
+              "if_pool_hits": 4,
+              "guaranteed_matches": 3,
+              "prob_pool_hits_at_least": 0.010313,
+              "statement": "풀 9개 중 4개가 당첨번호이면, 적어도 한 게임은 3개 이상 일치"
+            },
+            {
+              "if_pool_hits": 5,
+              "guaranteed_matches": 4,
+              "prob_pool_hits_at_least": 0.000567,
+              "statement": "풀 9개 중 5개가 당첨번호이면, 적어도 한 게임은 4개 이상 일치"
+            },
+            {
+              "if_pool_hits": 6,
+              "guaranteed_matches": 4,
+              "prob_pool_hits_at_least": 1e-05,
+              "statement": "풀 9개 중 6개가 당첨번호이면, 적어도 한 게임은 4개 이상 일치"
+            }
+          ],
+          "tickets": [
+            [
+              2,
+              19,
+              22,
+              35,
+              43,
+              44
+            ],
+            [
+              2,
+              19,
+              23,
+              28,
+              35,
+              43
+            ],
+            [
+              2,
+              22,
+              23,
+              32,
+              35,
+              44
+            ],
+            [
+              2,
+              19,
+              22,
+              23,
+              28,
+              32
+            ],
+            [
+              23,
+              28,
+              32,
+              35,
+              43,
+              44
+            ]
+          ]
+        }
+      },
+      "10": {
+        "score_top": {
+          "p_any_ge4": 0.0125208,
+          "p_any_ge5": 0.00028852,
+          "p_any_ge3": 0.148084,
+          "expected_tickets_ge4": 0.0139348,
+          "random_independent_p_any_ge4": 0.0138478,
+          "upper_bound_p_any_ge4": 0.0139348,
+          "max_shared": 3,
+          "tickets": [
+            [
+              2,
+              19,
+              22,
+              23,
+              28,
+              44
+            ],
+            [
+              2,
+              19,
+              32,
+              35,
+              43,
+              44
+            ],
+            [
+              2,
+              4,
+              7,
+              22,
+              43,
+              44
+            ],
+            [
+              9,
+              22,
+              23,
+              32,
+              43,
+              44
+            ],
+            [
+              1,
+              19,
+              22,
+              31,
+              43,
+              44
+            ],
+            [
+              1,
+              2,
+              17,
+              23,
+              43,
+              44
+            ],
+            [
+              7,
+              19,
+              22,
+              25,
+              32,
+              44
+            ],
+            [
+              2,
+              7,
+              23,
+              31,
+              32,
+              44
+            ],
+            [
+              1,
+              2,
+              9,
+              22,
+              35,
+              44
+            ],
+            [
+              4,
+              19,
+              23,
+              25,
+              43,
+              44
+            ]
+          ]
+        },
+        "coverage4": {
+          "p_any_ge4": 0.013895,
+          "p_any_ge5": 0.00028852,
+          "p_any_ge3": 0.21437,
+          "expected_tickets_ge4": 0.0139348,
+          "random_independent_p_any_ge4": 0.0138478,
+          "upper_bound_p_any_ge4": 0.0139348,
+          "max_shared": 2,
+          "tickets": [
+            [
+              2,
+              8,
+              10,
+              22,
+              35,
+              43
+            ],
+            [
+              2,
+              4,
+              27,
+              28,
+              31,
+              44
+            ],
+            [
+              6,
+              14,
+              19,
+              21,
+              43,
+              44
+            ],
+            [
+              2,
+              3,
+              15,
+              22,
+              38,
+              44
+            ],
+            [
+              9,
+              16,
+              17,
+              19,
+              32,
+              42
+            ],
+            [
+              2,
+              20,
+              23,
+              33,
+              35,
+              44
+            ],
+            [
+              4,
+              14,
+              23,
+              25,
+              32,
+              38
+            ],
+            [
+              7,
+              8,
+              17,
+              23,
+              26,
+              35
+            ],
+            [
+              9,
+              15,
+              17,
+              20,
+              22,
+              41
+            ],
+            [
+              1,
+              12,
+              19,
+              20,
+              25,
+              40
+            ]
+          ]
+        },
+        "wheel": {
+          "p_any_ge4": 0.010313,
+          "p_any_ge5": 0.00026961,
+          "p_any_ge3": 0.106447,
+          "expected_tickets_ge4": 0.0139348,
+          "random_independent_p_any_ge4": 0.0138478,
+          "upper_bound_p_any_ge4": 0.0139348,
+          "max_shared": 5,
+          "pool": [
+            2,
+            7,
+            19,
+            22,
+            23,
+            28,
+            32,
+            35,
+            43,
+            44
+          ],
+          "guarantees": [
+            {
+              "if_pool_hits": 3,
+              "guaranteed_matches": 2,
+              "prob_pool_hits_at_least": 0.112876,
+              "statement": "풀 10개 중 3개가 당첨번호이면, 적어도 한 게임은 2개 이상 일치"
+            },
+            {
+              "if_pool_hits": 4,
+              "guaranteed_matches": 3,
+              "prob_pool_hits_at_least": 0.016449,
+              "statement": "풀 10개 중 4개가 당첨번호이면, 적어도 한 게임은 3개 이상 일치"
+            },
+            {
+              "if_pool_hits": 5,
+              "guaranteed_matches": 4,
+              "prob_pool_hits_at_least": 0.001109,
+              "statement": "풀 10개 중 5개가 당첨번호이면, 적어도 한 게임은 4개 이상 일치"
+            },
+            {
+              "if_pool_hits": 6,
+              "guaranteed_matches": 4,
+              "prob_pool_hits_at_least": 2.6e-05,
+              "statement": "풀 10개 중 6개가 당첨번호이면, 적어도 한 게임은 4개 이상 일치"
+            }
+          ],
+          "tickets": [
+            [
+              2,
+              7,
+              19,
+              22,
+              23,
+              44
+            ],
+            [
+              2,
+              7,
+              32,
+              35,
+              43,
+              44
+            ],
+            [
+              19,
+              22,
+              23,
+              32,
+              35,
+              43
+            ],
+            [
+              2,
+              7,
+              28,
+              32,
+              35,
+              43
+            ],
+            [
+              2,
+              7,
+              23,
+              28,
+              43,
+              44
+            ],
+            [
+              2,
+              7,
+              19,
+              22,
+              23,
+              28
+            ],
+            [
+              2,
+              7,
+              19,
+              22,
+              32,
+              35
+            ],
+            [
+              19,
+              23,
+              28,
+              32,
+              43,
+              44
+            ],
+            [
+              22,
+              23,
+              28,
+              35,
+              43,
+              44
+            ],
+            [
+              19,
+              22,
+              28,
+              32,
+              35,
+              44
+            ]
+          ]
+        }
+      },
+      "20": {
+        "score_top": {
+          "p_any_ge4": 0.0235231,
+          "p_any_ge5": 0.00057704,
+          "p_any_ge3": 0.230195,
+          "expected_tickets_ge4": 0.0278697,
+          "random_independent_p_any_ge4": 0.0275038,
+          "upper_bound_p_any_ge4": 0.0278697,
+          "max_shared": 3,
+          "tickets": [
+            [
+              2,
+              19,
+              22,
+              23,
+              28,
+              44
+            ],
+            [
+              2,
+              19,
+              32,
+              35,
+              43,
+              44
+            ],
+            [
+              2,
+              4,
+              7,
+              22,
+              43,
+              44
+            ],
+            [
+              9,
+              22,
+              23,
+              32,
+              43,
+              44
+            ],
+            [
+              1,
+              19,
+              22,
+              31,
+              43,
+              44
+            ],
+            [
+              1,
+              2,
+              17,
+              23,
+              43,
+              44
+            ],
+            [
+              7,
+              19,
+              22,
+              25,
+              32,
+              44
+            ],
+            [
+              2,
+              7,
+              23,
+              31,
+              32,
+              44
+            ],
+            [
+              1,
+              2,
+              9,
+              22,
+              35,
+              44
+            ],
+            [
+              4,
+              19,
+              23,
+              25,
+              43,
+              44
+            ],
+            [
+              2,
+              4,
+              9,
+              19,
+              31,
+              44
+            ],
+            [
+              2,
+              9,
+              17,
+              19,
+              22,
+              43
+            ],
+            [
+              1,
+              2,
+              7,
+              19,
+              42,
+              44
+            ],
+            [
+              4,
+              17,
+              19,
+              22,
+              35,
+              44
+            ],
+            [
+              2,
+              17,
+              22,
+              25,
+              31,
+              44
+            ],
+            [
+              2,
+              22,
+              23,
+              25,
+              35,
+              43
+            ],
+            [
+              2,
+              9,
+              25,
+              28,
+              43,
+              44
+            ],
+            [
+              2,
+              4,
+              21,
+              23,
+              35,
+              44
+            ],
+            [
+              1,
+              19,
+              21,
+              23,
+              32,
+              44
+            ],
+            [
+              2,
+              7,
+              19,
+              23,
+              30,
+              43
+            ]
+          ]
+        },
+        "coverage4": {
+          "p_any_ge4": 0.0277416,
+          "p_any_ge5": 0.00057704,
+          "p_any_ge3": 0.393041,
+          "expected_tickets_ge4": 0.0278697,
+          "random_independent_p_any_ge4": 0.0275038,
+          "upper_bound_p_any_ge4": 0.0278697,
+          "max_shared": 2,
+          "tickets": [
+            [
+              2,
+              4,
+              19,
+              23,
+              32,
+              35
+            ],
+            [
+              2,
+              22,
+              30,
+              31,
+              35,
+              43
+            ],
+            [
+              3,
+              4,
+              9,
+              22,
+              32,
+              44
+            ],
+            [
+              7,
+              9,
+              11,
+              28,
+              43,
+              44
+            ],
+            [
+              10,
+              14,
+              17,
+              25,
+              31,
+              44
+            ],
+            [
+              2,
+              8,
+              21,
+              23,
+              30,
+              38
+            ],
+            [
+              4,
+              19,
+              25,
+              39,
+              40,
+              43
+            ],
+            [
+              5,
+              19,
+              20,
+              26,
+              38,
+              44
+            ],
+            [
+              1,
+              4,
+              21,
+              40,
+              44,
+              45
+            ],
+            [
+              2,
+              25,
+              33,
+              35,
+              39,
+              42
+            ],
+            [
+              1,
+              18,
+              19,
+              29,
+              32,
+              37
+            ],
+            [
+              2,
+              11,
+              17,
+              26,
+              37,
+              45
+            ],
+            [
+              1,
+              22,
+              27,
+              28,
+              31,
+              34
+            ],
+            [
+              9,
+              16,
+              17,
+              25,
+              36,
+              37
+            ],
+            [
+              5,
+              9,
+              12,
+              14,
+              17,
+              41
+            ],
+            [
+              11,
+              12,
+              19,
+              31,
+              32,
+              34
+            ],
+            [
+              7,
+              8,
+              15,
+              25,
+              26,
+              38
+            ],
+            [
+              1,
+              11,
+              14,
+              34,
+              40,
+              43
+            ],
+            [
+              7,
+              22,
+              24,
+              33,
+              38,
+              45
+            ],
+            [
+              6,
+              8,
+              21,
+              24,
+              31,
+              39
+            ]
+          ]
+        },
+        "wheel": {
+          "p_any_ge4": 0.0213435,
+          "p_any_ge5": 0.00056181,
+          "p_any_ge3": 0.177419,
+          "expected_tickets_ge4": 0.0278697,
+          "random_independent_p_any_ge4": 0.0275038,
+          "upper_bound_p_any_ge4": 0.0278697,
+          "max_shared": 4,
+          "pool": [
+            1,
+            2,
+            4,
+            7,
+            19,
+            22,
+            23,
+            28,
+            32,
+            35,
+            43,
+            44
+          ],
+          "guarantees": [
+            {
+              "if_pool_hits": 3,
+              "guaranteed_matches": 2,
+              "prob_pool_hits_at_least": 0.182778,
+              "statement": "풀 12개 중 3개가 당첨번호이면, 적어도 한 게임은 2개 이상 일치"
+            },
+            {
+              "if_pool_hits": 4,
+              "guaranteed_matches": 3,
+              "prob_pool_hits_at_least": 0.03541,
+              "statement": "풀 12개 중 4개가 당첨번호이면, 적어도 한 게임은 3개 이상 일치"
+            },
+            {
+              "if_pool_hits": 5,
+              "guaranteed_matches": 4,
+              "prob_pool_hits_at_least": 0.003322,
+              "statement": "풀 12개 중 5개가 당첨번호이면, 적어도 한 게임은 4개 이상 일치"
+            },
+            {
+              "if_pool_hits": 6,
+              "guaranteed_matches": 4,
+              "prob_pool_hits_at_least": 0.000113,
+              "statement": "풀 12개 중 6개가 당첨번호이면, 적어도 한 게임은 4개 이상 일치"
+            }
+          ],
+          "tickets": [
+            [
+              1,
+              2,
+              19,
+              22,
+              43,
+              44
+            ],
+            [
+              2,
+              4,
+              19,
+              23,
+              32,
+              44
+            ],
+            [
+              1,
+              2,
+              23,
+              28,
+              43,
+              44
+            ],
+            [
+              2,
+              7,
+              22,
+              28,
+              35,
+              44
+            ],
+            [
+              1,
+              2,
+              4,
+              32,
+              43,
+              44
+            ],
+            [
+              1,
+              7,
+              22,
+              23,
+              32,
+              44
+            ],
+            [
+              2,
+              4,
+              22,
+              23,
+              35,
+              43
+            ],
+            [
+              2,
+              7,
+              19,
+              28,
+              32,
+              43
+            ],
+            [
+              4,
+              19,
+              22,
+              23,
+              28,
+              32
+            ],
+            [
+              4,
+              7,
+              23,
+              28,
+              43,
+              44
+            ],
+            [
+              1,
+              4,
+              19,
+              28,
+              35,
+              44
+            ],
+            [
+              1,
+              2,
+              23,
+              28,
+              32,
+              35
+            ],
+            [
+              1,
+              4,
+              22,
+              28,
+              32,
+              43
+            ],
+            [
+              1,
+              2,
+              19,
+              22,
+              32,
+              35
+            ],
+            [
+              19,
+              22,
+              32,
+              35,
+              43,
+              44
+            ],
+            [
+              1,
+              7,
+              19,
+              23,
+              35,
+              43
+            ],
+            [
+              1,
+              2,
+              19,
+              22,
+              23,
+              28
+            ],
+            [
+              1,
+              2,
+              4,
+              7,
+              23,
+              28
+            ],
+            [
+              1,
+              2,
+              4,
+              7,
+              32,
+              35
+            ],
+            [
+              1,
+              2,
+              4,
+              7,
+              19,
+              22
+            ]
+          ]
+        }
+      }
+    },
+    "backtest": {
+      "baseline": {
+        "p_ge4_per_ticket": 0.001393,
+        "p_any_ge4": {
+          "5": 0.006948,
+          "10": 0.013848,
+          "20": 0.027504
+        }
+      },
+      "rows": [
+        {
+          "strategy": "score_top",
+          "n_games": 5,
+          "rounds": 200,
+          "tickets": 1000,
+          "tickets_ge4": 0,
+          "p_ge4_per_ticket": 0.0,
+          "p_value_ge4_per_ticket": 1.0,
+          "rounds_any_ge4": 0,
+          "p_any_ge4": 0.0,
+          "random_p_any_ge4": 0.006948,
+          "p_value_any_ge4": 1.0,
+          "avg_matches": 0.762,
+          "p_ge3_per_ticket": 0.023,
+          "best_match_distribution": {
+            "0": 26,
+            "1": 85,
+            "2": 73,
+            "3": 16,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "p_value_ge4_per_ticket_bh": 1.0,
+          "beats_random": false
+        },
+        {
+          "strategy": "score_top",
+          "n_games": 10,
+          "rounds": 200,
+          "tickets": 2000,
+          "tickets_ge4": 1,
+          "p_ge4_per_ticket": 0.0005,
+          "p_value_ge4_per_ticket": 0.9385,
+          "rounds_any_ge4": 1,
+          "p_any_ge4": 0.005,
+          "random_p_any_ge4": 0.013848,
+          "p_value_any_ge4": 0.9385,
+          "avg_matches": 0.756,
+          "p_ge3_per_ticket": 0.02,
+          "best_match_distribution": {
+            "0": 15,
+            "1": 74,
+            "2": 86,
+            "3": 24,
+            "4": 1,
+            "5": 0,
+            "6": 0
+          },
+          "p_value_ge4_per_ticket_bh": 1.0,
+          "beats_random": false
+        },
+        {
+          "strategy": "score_top",
+          "n_games": 20,
+          "rounds": 200,
+          "tickets": 4000,
+          "tickets_ge4": 3,
+          "p_ge4_per_ticket": 0.00075,
+          "p_value_ge4_per_ticket": 0.9162,
+          "rounds_any_ge4": 3,
+          "p_any_ge4": 0.015,
+          "random_p_any_ge4": 0.027504,
+          "p_value_any_ge4": 0.9147,
+          "avg_matches": 0.7578,
+          "p_ge3_per_ticket": 0.02,
+          "best_match_distribution": {
+            "0": 8,
+            "1": 55,
+            "2": 91,
+            "3": 43,
+            "4": 3,
+            "5": 0,
+            "6": 0
+          },
+          "p_value_ge4_per_ticket_bh": 1.0,
+          "beats_random": false
+        },
+        {
+          "strategy": "coverage4",
+          "n_games": 5,
+          "rounds": 200,
+          "tickets": 1000,
+          "tickets_ge4": 0,
+          "p_ge4_per_ticket": 0.0,
+          "p_value_ge4_per_ticket": 1.0,
+          "rounds_any_ge4": 0,
+          "p_any_ge4": 0.0,
+          "random_p_any_ge4": 0.006948,
+          "p_value_any_ge4": 1.0,
+          "avg_matches": 0.792,
+          "p_ge3_per_ticket": 0.022,
+          "best_match_distribution": {
+            "0": 1,
+            "1": 76,
+            "2": 103,
+            "3": 20,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "p_value_ge4_per_ticket_bh": 1.0,
+          "beats_random": false
+        },
+        {
+          "strategy": "coverage4",
+          "n_games": 10,
+          "rounds": 200,
+          "tickets": 2000,
+          "tickets_ge4": 1,
+          "p_ge4_per_ticket": 0.0005,
+          "p_value_ge4_per_ticket": 0.9385,
+          "rounds_any_ge4": 1,
+          "p_any_ge4": 0.005,
+          "random_p_any_ge4": 0.013848,
+          "p_value_any_ge4": 0.9385,
+          "avg_matches": 0.7995,
+          "p_ge3_per_ticket": 0.0215,
+          "best_match_distribution": {
+            "0": 0,
+            "1": 45,
+            "2": 118,
+            "3": 36,
+            "4": 1,
+            "5": 0,
+            "6": 0
+          },
+          "p_value_ge4_per_ticket_bh": 1.0,
+          "beats_random": false
+        },
+        {
+          "strategy": "coverage4",
+          "n_games": 20,
+          "rounds": 200,
+          "tickets": 4000,
+          "tickets_ge4": 6,
+          "p_ge4_per_ticket": 0.0015,
+          "p_value_ge4_per_ticket": 0.4838,
+          "rounds_any_ge4": 6,
+          "p_any_ge4": 0.03,
+          "random_p_any_ge4": 0.027504,
+          "p_value_any_ge4": 0.4724,
+          "avg_matches": 0.7895,
+          "p_ge3_per_ticket": 0.02225,
+          "best_match_distribution": {
+            "0": 0,
+            "1": 14,
+            "2": 121,
+            "3": 59,
+            "4": 6,
+            "5": 0,
+            "6": 0
+          },
+          "p_value_ge4_per_ticket_bh": 1.0,
+          "beats_random": false
+        },
+        {
+          "strategy": "wheel",
+          "n_games": 5,
+          "rounds": 200,
+          "tickets": 1000,
+          "tickets_ge4": 3,
+          "p_ge4_per_ticket": 0.003,
+          "p_value_ge4_per_ticket": 0.1648,
+          "rounds_any_ge4": 2,
+          "p_any_ge4": 0.01,
+          "random_p_any_ge4": 0.006948,
+          "p_value_any_ge4": 0.405,
+          "avg_matches": 0.776,
+          "p_ge3_per_ticket": 0.019,
+          "best_match_distribution": {
+            "0": 52,
+            "1": 83,
+            "2": 51,
+            "3": 12,
+            "4": 2,
+            "5": 0,
+            "6": 0
+          },
+          "wheel": {
+            "pool_size": 9,
+            "pool_hits_mean": 1.16,
+            "pool_hits_expected": 1.2,
+            "condition_rounds": 0,
+            "condition_probability": 0.000567,
+            "guarantee_held": 0
+          },
+          "p_value_ge4_per_ticket_bh": 1.0,
+          "beats_random": false
+        },
+        {
+          "strategy": "wheel",
+          "n_games": 10,
+          "rounds": 200,
+          "tickets": 2000,
+          "tickets_ge4": 1,
+          "p_ge4_per_ticket": 0.0005,
+          "p_value_ge4_per_ticket": 0.9385,
+          "rounds_any_ge4": 1,
+          "p_any_ge4": 0.005,
+          "random_p_any_ge4": 0.013848,
+          "p_value_any_ge4": 0.9385,
+          "avg_matches": 0.759,
+          "p_ge3_per_ticket": 0.0185,
+          "best_match_distribution": {
+            "0": 42,
+            "1": 85,
+            "2": 55,
+            "3": 17,
+            "4": 1,
+            "5": 0,
+            "6": 0
+          },
+          "wheel": {
+            "pool_size": 10,
+            "pool_hits_mean": 1.265,
+            "pool_hits_expected": 1.3333,
+            "condition_rounds": 0,
+            "condition_probability": 0.001109,
+            "guarantee_held": 0
+          },
+          "p_value_ge4_per_ticket_bh": 1.0,
+          "beats_random": false
+        },
+        {
+          "strategy": "wheel",
+          "n_games": 20,
+          "rounds": 200,
+          "tickets": 4000,
+          "tickets_ge4": 5,
+          "p_ge4_per_ticket": 0.00125,
+          "p_value_ge4_per_ticket": 0.6541,
+          "rounds_any_ge4": 5,
+          "p_any_ge4": 0.025,
+          "random_p_any_ge4": 0.027504,
+          "p_value_any_ge4": 0.6459,
+          "avg_matches": 0.7482,
+          "p_ge3_per_ticket": 0.01825,
+          "best_match_distribution": {
+            "0": 35,
+            "1": 68,
+            "2": 66,
+            "3": 26,
+            "4": 5,
+            "5": 0,
+            "6": 0
+          },
+          "wheel": {
+            "pool_size": 12,
+            "pool_hits_mean": 1.495,
+            "pool_hits_expected": 1.6,
+            "condition_rounds": 0,
+            "condition_probability": 0.003322,
+            "guarantee_held": 0
+          },
+          "p_value_ge4_per_ticket_bh": 1.0,
+          "beats_random": false
+        },
+        {
+          "strategy": "random",
+          "n_games": 5,
+          "rounds": 200,
+          "tickets": 1000,
+          "tickets_ge4": 1,
+          "p_ge4_per_ticket": 0.001,
+          "p_value_ge4_per_ticket": 0.752,
+          "rounds_any_ge4": 1,
+          "p_any_ge4": 0.005,
+          "random_p_any_ge4": 0.006948,
+          "p_value_any_ge4": 0.752,
+          "avg_matches": 0.735,
+          "p_ge3_per_ticket": 0.024,
+          "best_match_distribution": {
+            "0": 3,
+            "1": 85,
+            "2": 90,
+            "3": 21,
+            "4": 1,
+            "5": 0,
+            "6": 0
+          }
+        },
+        {
+          "strategy": "random",
+          "n_games": 10,
+          "rounds": 200,
+          "tickets": 2000,
+          "tickets_ge4": 6,
+          "p_ge4_per_ticket": 0.003,
+          "p_value_ge4_per_ticket": 0.0638,
+          "rounds_any_ge4": 6,
+          "p_any_ge4": 0.03,
+          "random_p_any_ge4": 0.013848,
+          "p_value_any_ge4": 0.0612,
+          "avg_matches": 0.801,
+          "p_ge3_per_ticket": 0.023,
+          "best_match_distribution": {
+            "0": 0,
+            "1": 24,
+            "2": 135,
+            "3": 35,
+            "4": 5,
+            "5": 1,
+            "6": 0
+          }
+        },
+        {
+          "strategy": "random",
+          "n_games": 20,
+          "rounds": 200,
+          "tickets": 4000,
+          "tickets_ge4": 8,
+          "p_ge4_per_ticket": 0.002,
+          "p_value_ge4_per_ticket": 0.1996,
+          "rounds_any_ge4": 8,
+          "p_any_ge4": 0.04,
+          "random_p_any_ge4": 0.027504,
+          "p_value_any_ge4": 0.188,
+          "avg_matches": 0.7725,
+          "p_ge3_per_ticket": 0.02325,
+          "best_match_distribution": {
+            "0": 0,
+            "1": 3,
+            "2": 123,
+            "3": 66,
+            "4": 8,
+            "5": 0,
+            "6": 0
+          }
+        }
+      ],
+      "power_detect_double_p_ge4": {
+        "5": 0.15,
+        "10": 0.326,
+        "20": 0.558
+      },
+      "rounds_tested": 200,
+      "first_round": 1044,
+      "last_round": 1243
+    }
   },
   "disclaimer": "본 분석은 과거 데이터에 대한 통계적 서술과 검증 결과입니다. 로또 추첨은 매 회 독립적인 무작위 시행이며, 어떤 분석 방법도 당첨 확률을 높인다는 것이 검증되지 않았습니다."
 }

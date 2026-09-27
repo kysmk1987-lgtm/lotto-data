@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-27T20:23:47+09:00",
+  "generated_at": "2026-09-27T23:21:47+09:00",
   "target_round": 1244,
   "last_round": {
     "round": 1243,
@@ -20,81 +20,81 @@
       "rank": 1,
       "numbers": [
         2,
+        5,
+        7,
         17,
-        19,
-        32,
-        37,
-        39
+        23,
+        44
       ],
-      "fitness": 0.8039,
-      "score_sum": 0.8039,
-      "sum": 146,
+      "fitness": 0.8075,
+      "score_sum": 0.8075,
+      "sum": 98,
       "odd_even": "4:2",
-      "low_high": "3:3"
+      "low_high": "4:2"
     },
     {
       "rank": 2,
       "numbers": [
-        8,
-        11,
-        14,
+        2,
+        10,
+        16,
         23,
-        35,
-        43
+        34,
+        35
       ],
-      "fitness": 0.8027,
-      "score_sum": 0.8027,
-      "sum": 134,
-      "odd_even": "4:2",
+      "fitness": 0.8024,
+      "score_sum": 0.8024,
+      "sum": 120,
+      "odd_even": "2:4",
       "low_high": "3:3"
     },
     {
       "rank": 3,
       "numbers": [
-        9,
-        10,
-        16,
-        22,
-        40,
-        41
+        3,
+        5,
+        34,
+        36,
+        43,
+        44
       ],
-      "fitness": 0.802,
-      "score_sum": 0.802,
-      "sum": 138,
-      "odd_even": "2:4",
-      "low_high": "4:2"
+      "fitness": 0.8016,
+      "score_sum": 0.8016,
+      "sum": 165,
+      "odd_even": "3:3",
+      "low_high": "2:4"
     },
     {
       "rank": 4,
       "numbers": [
-        3,
-        5,
-        7,
-        12,
-        38,
-        44
+        1,
+        4,
+        8,
+        23,
+        27,
+        39
       ],
-      "fitness": 0.8014,
-      "score_sum": 0.8014,
-      "sum": 109,
-      "odd_even": "3:3",
-      "low_high": "4:2"
+      "fitness": 0.8003,
+      "score_sum": 0.8003,
+      "sum": 102,
+      "odd_even": "4:2",
+      "low_high": "3:3"
     },
     {
       "rank": 5,
       "numbers": [
-        13,
-        26,
-        27,
-        30,
-        36,
-        45
+        3,
+        4,
+        6,
+        23,
+        32,
+        37
       ],
-      "fitness": 0.7961,
-      "score_sum": 0.7961,
-      "sum": 177,
+      "fitness": 0.8,
+      "score_sum": 0.8,
+      "sum": 105,
       "odd_even": "3:3",
-      "low_high": "1:5"
+      "low_high": "3:3"
     }
   ],
   "number_scores": [
@@ -731,7 +731,7 @@
   ],
   "backtest": {
     "rounds_tested": 200,
-    "avg_matches": 0.803,
+    "avg_matches": 0.802,
     "random_avg_matches": 0.8,
     "hit3_rate": 0.025,
     "random_hit3_rate": 0.0238,
@@ -742,8 +742,633 @@
   "disclaimer": "본 추천은 과거 통계 기반 참고용이며 당첨을 보장하지 않습니다. 로또 추첨은 매 회 독립적인 무작위 시행입니다.",
   "method": {
     "base": "ensemble",
-    "optimizer": "coverage",
-    "reason": "어떤 방법도 무작위보다 유의하게 좋지 않아 기본값(ensemble)을 사용. 최종 5게임은 커버리지 최적화로 겹침을 최소화",
-    "p_any_ge3": 0.118679
-  }
+    "optimizer": "coverage4",
+    "reason": "어떤 방법도 무작위보다 유의하게 좋지 않아 기본값(ensemble)을 사용",
+    "p_any_ge3": 0.11148,
+    "p_any_ge4": 0.0069542
+  },
+  "sets": {
+    "5": [
+      {
+        "rank": 1,
+        "numbers": [
+          2,
+          5,
+          7,
+          17,
+          23,
+          44
+        ],
+        "fitness": 0.8075,
+        "score_sum": 0.8075,
+        "sum": 98,
+        "odd_even": "4:2",
+        "low_high": "4:2"
+      },
+      {
+        "rank": 2,
+        "numbers": [
+          2,
+          10,
+          16,
+          23,
+          34,
+          35
+        ],
+        "fitness": 0.8024,
+        "score_sum": 0.8024,
+        "sum": 120,
+        "odd_even": "2:4",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 3,
+        "numbers": [
+          3,
+          5,
+          34,
+          36,
+          43,
+          44
+        ],
+        "fitness": 0.8016,
+        "score_sum": 0.8016,
+        "sum": 165,
+        "odd_even": "3:3",
+        "low_high": "2:4"
+      },
+      {
+        "rank": 4,
+        "numbers": [
+          1,
+          4,
+          8,
+          23,
+          27,
+          39
+        ],
+        "fitness": 0.8003,
+        "score_sum": 0.8003,
+        "sum": 102,
+        "odd_even": "4:2",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 5,
+        "numbers": [
+          3,
+          4,
+          6,
+          23,
+          32,
+          37
+        ],
+        "fitness": 0.8,
+        "score_sum": 0.8,
+        "sum": 105,
+        "odd_even": "3:3",
+        "low_high": "3:3"
+      }
+    ],
+    "10": [
+      {
+        "rank": 1,
+        "numbers": [
+          2,
+          8,
+          10,
+          22,
+          35,
+          43
+        ],
+        "fitness": 0.8057,
+        "score_sum": 0.8057,
+        "sum": 120,
+        "odd_even": "2:4",
+        "low_high": "4:2"
+      },
+      {
+        "rank": 2,
+        "numbers": [
+          2,
+          4,
+          27,
+          28,
+          31,
+          44
+        ],
+        "fitness": 0.8052,
+        "score_sum": 0.8052,
+        "sum": 136,
+        "odd_even": "2:4",
+        "low_high": "2:4"
+      },
+      {
+        "rank": 3,
+        "numbers": [
+          6,
+          14,
+          19,
+          21,
+          43,
+          44
+        ],
+        "fitness": 0.8052,
+        "score_sum": 0.8052,
+        "sum": 147,
+        "odd_even": "3:3",
+        "low_high": "4:2"
+      },
+      {
+        "rank": 4,
+        "numbers": [
+          2,
+          3,
+          15,
+          22,
+          38,
+          44
+        ],
+        "fitness": 0.8047,
+        "score_sum": 0.8047,
+        "sum": 124,
+        "odd_even": "2:4",
+        "low_high": "4:2"
+      },
+      {
+        "rank": 5,
+        "numbers": [
+          9,
+          16,
+          17,
+          19,
+          32,
+          42
+        ],
+        "fitness": 0.8041,
+        "score_sum": 0.8041,
+        "sum": 135,
+        "odd_even": "3:3",
+        "low_high": "4:2"
+      },
+      {
+        "rank": 6,
+        "numbers": [
+          2,
+          20,
+          23,
+          33,
+          35,
+          44
+        ],
+        "fitness": 0.8035,
+        "score_sum": 0.8035,
+        "sum": 157,
+        "odd_even": "3:3",
+        "low_high": "2:4"
+      },
+      {
+        "rank": 7,
+        "numbers": [
+          4,
+          14,
+          23,
+          25,
+          32,
+          38
+        ],
+        "fitness": 0.8034,
+        "score_sum": 0.8034,
+        "sum": 136,
+        "odd_even": "2:4",
+        "low_high": "2:4"
+      },
+      {
+        "rank": 8,
+        "numbers": [
+          7,
+          8,
+          17,
+          23,
+          26,
+          35
+        ],
+        "fitness": 0.8027,
+        "score_sum": 0.8027,
+        "sum": 116,
+        "odd_even": "4:2",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 9,
+        "numbers": [
+          9,
+          15,
+          17,
+          20,
+          22,
+          41
+        ],
+        "fitness": 0.8003,
+        "score_sum": 0.8003,
+        "sum": 124,
+        "odd_even": "4:2",
+        "low_high": "5:1"
+      },
+      {
+        "rank": 10,
+        "numbers": [
+          1,
+          12,
+          19,
+          20,
+          25,
+          40
+        ],
+        "fitness": 0.8,
+        "score_sum": 0.8,
+        "sum": 117,
+        "odd_even": "3:3",
+        "low_high": "4:2"
+      }
+    ],
+    "20": [
+      {
+        "rank": 1,
+        "numbers": [
+          2,
+          4,
+          19,
+          23,
+          32,
+          35
+        ],
+        "fitness": 0.8076,
+        "score_sum": 0.8076,
+        "sum": 115,
+        "odd_even": "3:3",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 2,
+        "numbers": [
+          2,
+          22,
+          30,
+          31,
+          35,
+          43
+        ],
+        "fitness": 0.8068,
+        "score_sum": 0.8068,
+        "sum": 163,
+        "odd_even": "3:3",
+        "low_high": "2:4"
+      },
+      {
+        "rank": 3,
+        "numbers": [
+          3,
+          4,
+          9,
+          22,
+          32,
+          44
+        ],
+        "fitness": 0.8057,
+        "score_sum": 0.8057,
+        "sum": 114,
+        "odd_even": "2:4",
+        "low_high": "4:2"
+      },
+      {
+        "rank": 4,
+        "numbers": [
+          7,
+          9,
+          11,
+          28,
+          43,
+          44
+        ],
+        "fitness": 0.8055,
+        "score_sum": 0.8055,
+        "sum": 142,
+        "odd_even": "4:2",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 5,
+        "numbers": [
+          10,
+          14,
+          17,
+          25,
+          31,
+          44
+        ],
+        "fitness": 0.8042,
+        "score_sum": 0.8042,
+        "sum": 141,
+        "odd_even": "3:3",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 6,
+        "numbers": [
+          2,
+          8,
+          21,
+          23,
+          30,
+          38
+        ],
+        "fitness": 0.8036,
+        "score_sum": 0.8036,
+        "sum": 122,
+        "odd_even": "2:4",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 7,
+        "numbers": [
+          4,
+          19,
+          25,
+          39,
+          40,
+          43
+        ],
+        "fitness": 0.8035,
+        "score_sum": 0.8035,
+        "sum": 170,
+        "odd_even": "4:2",
+        "low_high": "2:4"
+      },
+      {
+        "rank": 8,
+        "numbers": [
+          5,
+          19,
+          20,
+          26,
+          38,
+          44
+        ],
+        "fitness": 0.8035,
+        "score_sum": 0.8035,
+        "sum": 152,
+        "odd_even": "2:4",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 9,
+        "numbers": [
+          1,
+          4,
+          21,
+          40,
+          44,
+          45
+        ],
+        "fitness": 0.803,
+        "score_sum": 0.803,
+        "sum": 155,
+        "odd_even": "3:3",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 10,
+        "numbers": [
+          2,
+          25,
+          33,
+          35,
+          39,
+          42
+        ],
+        "fitness": 0.8011,
+        "score_sum": 0.8011,
+        "sum": 176,
+        "odd_even": "4:2",
+        "low_high": "1:5"
+      },
+      {
+        "rank": 11,
+        "numbers": [
+          1,
+          18,
+          19,
+          29,
+          32,
+          37
+        ],
+        "fitness": 0.8009,
+        "score_sum": 0.8009,
+        "sum": 136,
+        "odd_even": "4:2",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 12,
+        "numbers": [
+          2,
+          11,
+          17,
+          26,
+          37,
+          45
+        ],
+        "fitness": 0.8004,
+        "score_sum": 0.8004,
+        "sum": 138,
+        "odd_even": "4:2",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 13,
+        "numbers": [
+          1,
+          22,
+          27,
+          28,
+          31,
+          34
+        ],
+        "fitness": 0.8003,
+        "score_sum": 0.8003,
+        "sum": 143,
+        "odd_even": "3:3",
+        "low_high": "2:4"
+      },
+      {
+        "rank": 14,
+        "numbers": [
+          9,
+          16,
+          17,
+          25,
+          36,
+          37
+        ],
+        "fitness": 0.8002,
+        "score_sum": 0.8002,
+        "sum": 140,
+        "odd_even": "4:2",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 15,
+        "numbers": [
+          5,
+          9,
+          12,
+          14,
+          17,
+          41
+        ],
+        "fitness": 0.7999,
+        "score_sum": 0.7999,
+        "sum": 98,
+        "odd_even": "4:2",
+        "low_high": "5:1"
+      },
+      {
+        "rank": 16,
+        "numbers": [
+          11,
+          12,
+          19,
+          31,
+          32,
+          34
+        ],
+        "fitness": 0.7997,
+        "score_sum": 0.7997,
+        "sum": 139,
+        "odd_even": "3:3",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 17,
+        "numbers": [
+          7,
+          8,
+          15,
+          25,
+          26,
+          38
+        ],
+        "fitness": 0.7995,
+        "score_sum": 0.7995,
+        "sum": 119,
+        "odd_even": "3:3",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 18,
+        "numbers": [
+          1,
+          11,
+          14,
+          34,
+          40,
+          43
+        ],
+        "fitness": 0.7993,
+        "score_sum": 0.7993,
+        "sum": 143,
+        "odd_even": "3:3",
+        "low_high": "3:3"
+      },
+      {
+        "rank": 19,
+        "numbers": [
+          7,
+          22,
+          24,
+          33,
+          38,
+          45
+        ],
+        "fitness": 0.7985,
+        "score_sum": 0.7985,
+        "sum": 169,
+        "odd_even": "3:3",
+        "low_high": "2:4"
+      },
+      {
+        "rank": 20,
+        "numbers": [
+          6,
+          8,
+          21,
+          24,
+          31,
+          39
+        ],
+        "fitness": 0.798,
+        "score_sum": 0.798,
+        "sum": 129,
+        "odd_even": "3:3",
+        "low_high": "3:3"
+      }
+    ]
+  },
+  "set_strategies": {
+    "5": "coverage4",
+    "10": "coverage4",
+    "20": "coverage4"
+  },
+  "constraints": {
+    "sum_min": 98,
+    "sum_max": 177,
+    "excluded_odd_even": [
+      "0:6",
+      "1:5",
+      "5:1",
+      "6:0"
+    ],
+    "max_same_last_digit": 2,
+    "max_consecutive_run": 2,
+    "max_per_decade_band": 3,
+    "decade_bands": [
+      [
+        1,
+        10
+      ],
+      [
+        11,
+        20
+      ],
+      [
+        21,
+        30
+      ],
+      [
+        31,
+        40
+      ],
+      [
+        41,
+        45
+      ]
+    ],
+    "ac_min": 7,
+    "max_per_slip_line": 3,
+    "penalties": {
+      "sum_range": 0.1,
+      "odd_even_extreme": 0.1,
+      "same_last_digit": 0.08,
+      "consecutive_run": 0.08,
+      "band_concentration": 0.08,
+      "low_ac": 0.05,
+      "popular_all_le31": 0.05,
+      "arithmetic_progression": 0.1,
+      "slip_line": 0.08,
+      "past_winner": 0.2
+    },
+    "max_shared_between_games": 3
+  },
+  "strategy": "목표는 4등 이상(4개 이상 일치)입니다. ensemble 점수(마르코프 등 여러 모델을 결합)와 인기 패턴 감점으로 매긴 적합도 상위 조합에서, 게임끼리 번호를 최대 3개까지만 공유하도록 묶음을 만듭니다. 공유를 3개로 제한하면 두 게임이 같은 4개 번호로 동시에 4등이 되는 중복이 없어 '적어도 한 게임 4개 이상 일치' 확률이 이론 상한에 가까워집니다. 5게임 4개 이상 일치 커버리지 최적화(적어도 한 게임 4개 이상 일치 확률 0.695%), 10게임 4개 이상 일치 커버리지 최적화(적어도 한 게임 4개 이상 일치 확률 1.389%), 20게임 4개 이상 일치 커버리지 최적화(적어도 한 게임 4개 이상 일치 확률 2.774%). 단, 게임 하나가 4개 이상 맞을 확률은 어떤 번호든 0.139%로 같으며, 백테스트에서 무작위보다 유의하게 나은 방법은 확인되지 않았습니다. 과거 1등 조합은 제외합니다."
 }
