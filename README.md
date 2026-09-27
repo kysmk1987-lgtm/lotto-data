@@ -14,6 +14,7 @@
 |---|---|---|
 | `history.json` | 1회부터 최신 회차까지 전체 당첨번호 (최신 회차가 먼저) | https://raw.githubusercontent.com/kysmk1987-lgtm/lotto-data/main/history.json |
 | `recommendations.json` | 다음 회차 추천 5게임, 번호별 점수, 백테스트 결과 | https://raw.githubusercontent.com/kysmk1987-lgtm/lotto-data/main/recommendations.json |
+| `analysis.json` | 마르코프 전이행렬·몬테카를로, A/B/C 그룹 구성, 지아넬라 패턴, 각종 통계(관측 vs 이론), 무작위성 검정, 방법별 백테스트, N게임 커버리지/휠링 | https://raw.githubusercontent.com/kysmk1987-lgtm/lotto-data/main/analysis.json |
 
 ## 갱신 주기
 
@@ -43,3 +44,11 @@
 
 `schema_version`, `generated_at`, `target_round`, `last_round`, `games`(5게임), `number_scores`(1~45),
 `backtest`, `disclaimer` 로 구성됩니다. 키 구조는 앱과의 계약이므로 변경되지 않습니다.
+기존 키 뒤에 선택 필드 `method`(추천 기준 방법과 선택 이유)가 추가될 수 있습니다.
+
+## analysis.json (schema_version 1)
+
+최상위 키: `schema_version`, `generated_at`, `target_round`, `last_round`, `recommendation_method`, `markov`, `grouping`,
+`gianella`, `stats_catalog`, `randomness`, `backtest`, `portfolio`, `disclaimer`.
+모든 이론 분포는 8,145,060개 조합 전수 열거로 계산한 정확한 값이며, 각 섹션에는 p-값과 한국어 해석이 함께 들어 있습니다.
+이 분석은 과거 데이터의 서술과 검증일 뿐이며, 방법별 백테스트에서 어느 방법도 무작위보다 유의하게 낫지 않았습니다.
