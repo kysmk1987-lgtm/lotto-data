@@ -53,7 +53,8 @@
 `schema_version`, `generated_at`, `target_round`, `last_round`, `games`(5게임), `number_scores`(1~45),
 `backtest`, `disclaimer` 로 구성됩니다. 키 구조는 앱과의 계약이므로 변경되지 않습니다.
 기존 키 뒤에 선택 필드가 추가됩니다: `method`, `sets`(`"5"`/`"10"`/`"20"` 게임 세트, `games` == `sets["5"]`),
-`set_strategies`, `constraints`(앱에서 적합도를 똑같이 계산하기 위한 규칙), `strategy`(한국어 설명).
+`set_strategies`, `constraints`(앱에서 적합도를 똑같이 계산하기 위한 규칙, `pair_weight` 포함), `strategy`(한국어 설명),
+`pair_lift`(45×45 번호 쌍 동반 출현 lift, 소수 3자리).
 
 ## stores.json (schema_version 1)
 
