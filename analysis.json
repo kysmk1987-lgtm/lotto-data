@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-27T23:21:47+09:00",
+  "generated_at": "2026-09-28T09:25:36+09:00",
   "target_round": 1244,
   "last_round": {
     "round": 1243,
@@ -9042,6 +9042,461 @@
       "first_round": 1044,
       "last_round": 1243
     }
+  },
+  "synergy": {
+    "formula": "fitness += pair_weight × mean_{15쌍} ln(clamp(pair_lift, 0.25, 4)); pair_lift = (관측 + k·기대)/(기대·(1+k)), 기대 = 회차 수 × 30/1980",
+    "validation_rounds_by_index": [
+      743,
+      1042
+    ],
+    "validation_rounds": 300,
+    "k_selection": {
+      "grid": [
+        "0.0",
+        "1.0",
+        "3.0",
+        "10.0",
+        "30.0",
+        "100.0",
+        "300.0",
+        "1000.0",
+        "inf"
+      ],
+      "mean_logloss": {
+        "0.0": 0.079234,
+        "1.0": 0.078716,
+        "3.0": 0.078582,
+        "10.0": 0.078532,
+        "30.0": 0.078521,
+        "100.0": 0.078517,
+        "300.0": 0.078516,
+        "1000.0": 0.078516,
+        "inf": 0.078516
+      },
+      "best_k": null,
+      "p_value_vs_uniform": 1.0
+    },
+    "weight_selection": [
+      {
+        "k": null,
+        "weight": 0.0,
+        "mean_rank_percentile": 0.51169,
+        "diff_vs_0": 0.0,
+        "p_value": 1.0,
+        "p_value_bh": 1.0
+      },
+      {
+        "k": 0.0,
+        "weight": 0.05,
+        "mean_rank_percentile": 0.51781,
+        "diff_vs_0": 0.00613,
+        "p_value": 0.8708,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 0.0,
+        "weight": 0.1,
+        "mean_rank_percentile": 0.51845,
+        "diff_vs_0": 0.00676,
+        "p_value": 0.891,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 0.0,
+        "weight": 0.2,
+        "mean_rank_percentile": 0.51921,
+        "diff_vs_0": 0.00752,
+        "p_value": 0.8964,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 0.0,
+        "weight": 0.5,
+        "mean_rank_percentile": 0.5229,
+        "diff_vs_0": 0.01121,
+        "p_value": 0.8873,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 0.0,
+        "weight": 1.0,
+        "mean_rank_percentile": 0.52485,
+        "diff_vs_0": 0.01316,
+        "p_value": 0.8285,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 0.0,
+        "weight": 2.0,
+        "mean_rank_percentile": 0.52476,
+        "diff_vs_0": 0.01307,
+        "p_value": 0.7667,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 1.0,
+        "weight": 0.05,
+        "mean_rank_percentile": 0.51826,
+        "diff_vs_0": 0.00657,
+        "p_value": 0.8869,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 1.0,
+        "weight": 0.1,
+        "mean_rank_percentile": 0.51828,
+        "diff_vs_0": 0.00659,
+        "p_value": 0.8876,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 1.0,
+        "weight": 0.2,
+        "mean_rank_percentile": 0.51891,
+        "diff_vs_0": 0.00722,
+        "p_value": 0.9061,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 1.0,
+        "weight": 0.5,
+        "mean_rank_percentile": 0.52008,
+        "diff_vs_0": 0.00839,
+        "p_value": 0.9105,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 1.0,
+        "weight": 1.0,
+        "mean_rank_percentile": 0.52403,
+        "diff_vs_0": 0.01234,
+        "p_value": 0.9183,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 1.0,
+        "weight": 2.0,
+        "mean_rank_percentile": 0.52697,
+        "diff_vs_0": 0.01528,
+        "p_value": 0.8732,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 3.0,
+        "weight": 0.05,
+        "mean_rank_percentile": 0.51848,
+        "diff_vs_0": 0.00679,
+        "p_value": 0.8942,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 3.0,
+        "weight": 0.1,
+        "mean_rank_percentile": 0.51848,
+        "diff_vs_0": 0.00679,
+        "p_value": 0.8942,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 3.0,
+        "weight": 0.2,
+        "mean_rank_percentile": 0.5185,
+        "diff_vs_0": 0.00681,
+        "p_value": 0.8949,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 3.0,
+        "weight": 0.5,
+        "mean_rank_percentile": 0.51954,
+        "diff_vs_0": 0.00785,
+        "p_value": 0.9215,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 3.0,
+        "weight": 1.0,
+        "mean_rank_percentile": 0.52039,
+        "diff_vs_0": 0.0087,
+        "p_value": 0.9189,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 3.0,
+        "weight": 2.0,
+        "mean_rank_percentile": 0.52459,
+        "diff_vs_0": 0.0129,
+        "p_value": 0.9295,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 10.0,
+        "weight": 0.05,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8986,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 10.0,
+        "weight": 0.1,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8986,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 10.0,
+        "weight": 0.2,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8986,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 10.0,
+        "weight": 0.5,
+        "mean_rank_percentile": 0.51863,
+        "diff_vs_0": 0.00694,
+        "p_value": 0.899,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 10.0,
+        "weight": 1.0,
+        "mean_rank_percentile": 0.5191,
+        "diff_vs_0": 0.00742,
+        "p_value": 0.9125,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 10.0,
+        "weight": 2.0,
+        "mean_rank_percentile": 0.5202,
+        "diff_vs_0": 0.00852,
+        "p_value": 0.9302,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 30.0,
+        "weight": 0.05,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 30.0,
+        "weight": 0.1,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 30.0,
+        "weight": 0.2,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 30.0,
+        "weight": 0.5,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 30.0,
+        "weight": 1.0,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00694,
+        "p_value": 0.8988,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 30.0,
+        "weight": 2.0,
+        "mean_rank_percentile": 0.51872,
+        "diff_vs_0": 0.00703,
+        "p_value": 0.9018,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 100.0,
+        "weight": 0.05,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 100.0,
+        "weight": 0.1,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 100.0,
+        "weight": 0.2,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 100.0,
+        "weight": 0.5,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 100.0,
+        "weight": 1.0,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 100.0,
+        "weight": 2.0,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 300.0,
+        "weight": 0.05,
+        "mean_rank_percentile": 0.51863,
+        "diff_vs_0": 0.00694,
+        "p_value": 0.8989,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 300.0,
+        "weight": 0.1,
+        "mean_rank_percentile": 0.51863,
+        "diff_vs_0": 0.00694,
+        "p_value": 0.8988,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 300.0,
+        "weight": 0.2,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00694,
+        "p_value": 0.8988,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 300.0,
+        "weight": 0.5,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 300.0,
+        "weight": 1.0,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 300.0,
+        "weight": 2.0,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 1000.0,
+        "weight": 0.05,
+        "mean_rank_percentile": 0.51863,
+        "diff_vs_0": 0.00695,
+        "p_value": 0.8991,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 1000.0,
+        "weight": 0.1,
+        "mean_rank_percentile": 0.51863,
+        "diff_vs_0": 0.00695,
+        "p_value": 0.8991,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 1000.0,
+        "weight": 0.2,
+        "mean_rank_percentile": 0.51863,
+        "diff_vs_0": 0.00694,
+        "p_value": 0.899,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 1000.0,
+        "weight": 0.5,
+        "mean_rank_percentile": 0.51863,
+        "diff_vs_0": 0.00694,
+        "p_value": 0.8989,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 1000.0,
+        "weight": 1.0,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00694,
+        "p_value": 0.8988,
+        "p_value_bh": 0.9302
+      },
+      {
+        "k": 1000.0,
+        "weight": 2.0,
+        "mean_rank_percentile": 0.51862,
+        "diff_vs_0": 0.00693,
+        "p_value": 0.8987,
+        "p_value_bh": 0.9302
+      }
+    ],
+    "chosen_k": 1000.0,
+    "chosen_pair_weight": 0.0,
+    "carry_over": {
+      "term": "직전 회차 번호 포함 수",
+      "observed_mean": 0.8,
+      "expected_mean": 0.8,
+      "z": 0.0,
+      "p_value_two_sided": 1.0,
+      "mean_rank_percentile": {
+        "-0.1": 0.51368,
+        "0.0": 0.51169,
+        "0.1": 0.50784
+      }
+    },
+    "consecutive": {
+      "term": "이웃(연속) 번호 쌍 수",
+      "observed_mean": 0.6233,
+      "expected_mean": 0.6638,
+      "z": -0.966,
+      "p_value_two_sided": 0.3342,
+      "mean_rank_percentile": {
+        "-0.1": 0.50484,
+        "0.0": 0.51169,
+        "0.1": 0.52001
+      }
+    },
+    "note": "번호 단위 이월·이웃 효과는 앙상블 특징(carryover, neighbor)에 이미 포함. 조합 단위 이월/연번 항은 평가만 하고 적합도에 넣지 않는다(유의하지 않음). 연번 3개 이상은 기존 패널티(consecutive_run)로 처리."
   },
   "disclaimer": "본 분석은 과거 데이터에 대한 통계적 서술과 검증 결과입니다. 로또 추첨은 매 회 독립적인 무작위 시행이며, 어떤 분석 방법도 당첨 확률을 높인다는 것이 검증되지 않았습니다."
 }
