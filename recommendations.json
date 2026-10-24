@@ -1,311 +1,311 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T11:45:19+09:00",
-  "target_round": 1247,
+  "generated_at": "2026-10-25T00:44:44+09:00",
+  "target_round": 1248,
   "last_round": {
-    "round": 1246,
-    "date": "2026-10-17",
+    "round": 1247,
+    "date": "2026-10-24",
     "numbers": [
-      16,
+      8,
+      14,
+      21,
       22,
-      23,
-      24,
-      27,
-      28
+      42,
+      45
     ],
-    "bonus": 6
+    "bonus": 24
   },
   "games": [
     {
       "rank": 1,
       "numbers": [
+        4,
         9,
-        23,
         24,
-        30,
-        41,
-        42
+        32,
+        33,
+        43
       ],
-      "fitness": 0.8082,
-      "score_sum": 0.8082,
-      "sum": 169,
+      "fitness": 0.8037,
+      "score_sum": 0.8037,
+      "sum": 145,
       "odd_even": "3:3",
-      "low_high": "1:5"
+      "low_high": "2:4"
     },
     {
       "rank": 2,
       "numbers": [
-        10,
-        11,
-        14,
-        22,
-        32,
-        41
+        5,
+        7,
+        9,
+        20,
+        35,
+        42
       ],
-      "fitness": 0.8069,
-      "score_sum": 0.8069,
-      "sum": 130,
-      "odd_even": "2:4",
+      "fitness": 0.8033,
+      "score_sum": 0.8033,
+      "sum": 118,
+      "odd_even": "4:2",
       "low_high": "4:2"
     },
     {
       "rank": 3,
       "numbers": [
-        2,
-        4,
-        17,
+        3,
+        6,
+        31,
         32,
         37,
         43
       ],
-      "fitness": 0.8018,
-      "score_sum": 0.8018,
-      "sum": 135,
-      "odd_even": "3:3",
-      "low_high": "3:3"
+      "fitness": 0.8012,
+      "score_sum": 0.8012,
+      "sum": 152,
+      "odd_even": "4:2",
+      "low_high": "2:4"
     },
     {
       "rank": 4,
       "numbers": [
-        8,
+        3,
         11,
-        12,
+        16,
+        23,
         26,
-        35,
         45
       ],
-      "fitness": 0.8006,
-      "score_sum": 0.8006,
-      "sum": 137,
-      "odd_even": "3:3",
+      "fitness": 0.8004,
+      "score_sum": 0.8004,
+      "sum": 124,
+      "odd_even": "4:2",
       "low_high": "3:3"
     },
     {
       "rank": 5,
       "numbers": [
-        1,
         4,
+        7,
         17,
-        27,
-        39,
+        19,
+        38,
         42
       ],
-      "fitness": 0.7964,
-      "score_sum": 0.7964,
-      "sum": 130,
-      "odd_even": "4:2",
-      "low_high": "3:3"
+      "fitness": 0.7995,
+      "score_sum": 0.7995,
+      "sum": 127,
+      "odd_even": "3:3",
+      "low_high": "4:2"
     }
   ],
   "number_scores": [
     {
       "number": 1,
-      "score": 0.1322,
+      "score": 0.1326,
       "models": {
         "weighted": 0.1334,
-        "xgboost": 0.1335,
-        "bayes": 0.1423,
-        "markov": 0.1403
+        "xgboost": 0.1339,
+        "bayes": 0.1416,
+        "markov": 0.1401
       },
       "total_count": 171,
       "recent_10": 1,
-      "current_gap": 2,
+      "current_gap": 3,
       "max_gap": 36
     },
     {
       "number": 2,
-      "score": 0.1336,
+      "score": 0.1335,
       "models": {
         "weighted": 0.1332,
-        "xgboost": 0.1334,
-        "bayes": 0.1304,
+        "xgboost": 0.1335,
+        "bayes": 0.1298,
         "markov": 0.1313
       },
       "total_count": 157,
       "recent_10": 2,
-      "current_gap": 4,
+      "current_gap": 5,
       "max_gap": 48
     },
     {
       "number": 3,
-      "score": 0.1298,
+      "score": 0.1323,
       "models": {
-        "weighted": 0.1335,
-        "xgboost": 0.133,
-        "bayes": 0.1561,
-        "markov": 0.1734
+        "weighted": 0.1336,
+        "xgboost": 0.1339,
+        "bayes": 0.1383,
+        "markov": 0.1733
       },
       "total_count": 172,
       "recent_10": 0,
-      "current_gap": 16,
+      "current_gap": 17,
       "max_gap": 28
     },
     {
       "number": 4,
-      "score": 0.133,
+      "score": 0.1329,
       "models": {
         "weighted": 0.1332,
-        "xgboost": 0.1329,
-        "bayes": 0.1389,
-        "markov": 0.1272
+        "xgboost": 0.1336,
+        "bayes": 0.1416,
+        "markov": 0.1271
       },
       "total_count": 164,
       "recent_10": 2,
-      "current_gap": 1,
+      "current_gap": 2,
       "max_gap": 35
     },
     {
       "number": 5,
       "score": 0.1341,
       "models": {
-        "weighted": 0.1337,
-        "xgboost": 0.1338,
-        "bayes": 0.1234,
-        "markov": 0.1357
+        "weighted": 0.1336,
+        "xgboost": 0.1334,
+        "bayes": 0.1196,
+        "markov": 0.1356
       },
       "total_count": 154,
       "recent_10": 1,
-      "current_gap": 1,
+      "current_gap": 2,
       "max_gap": 73
     },
     {
       "number": 6,
-      "score": 0.1318,
+      "score": 0.1332,
       "models": {
-        "weighted": 0.1336,
+        "weighted": 0.1337,
         "xgboost": 0.133,
-        "bayes": 0.1441,
-        "markov": 0.1456
+        "bayes": 0.1318,
+        "markov": 0.1455
       },
       "total_count": 166,
       "recent_10": 0,
-      "current_gap": 11,
+      "current_gap": 12,
       "max_gap": 37
     },
     {
       "number": 7,
-      "score": 0.1331,
+      "score": 0.1327,
       "models": {
-        "weighted": 0.1333,
-        "xgboost": 0.1338,
-        "bayes": 0.1329,
-        "markov": 0.1383
+        "weighted": 0.1335,
+        "xgboost": 0.1335,
+        "bayes": 0.1427,
+        "markov": 0.1382
       },
       "total_count": 171,
       "recent_10": 1,
-      "current_gap": 5,
+      "current_gap": 6,
       "max_gap": 38
     },
     {
       "number": 8,
-      "score": 0.1351,
+      "score": 0.1331,
       "models": {
-        "weighted": 0.1337,
-        "xgboost": 0.1338,
-        "bayes": 0.115,
-        "markov": 0.1336
+        "weighted": 0.1335,
+        "xgboost": 0.1349,
+        "bayes": 0.1365,
+        "markov": 0.1281
       },
-      "total_count": 158,
-      "recent_10": 0,
-      "current_gap": 16,
+      "total_count": 159,
+      "recent_10": 1,
+      "current_gap": 0,
       "max_gap": 28
     },
     {
       "number": 9,
-      "score": 0.1368,
+      "score": 0.1355,
       "models": {
-        "weighted": 0.1336,
-        "xgboost": 0.1321,
-        "bayes": 0.1062,
-        "markov": 0.1203
+        "weighted": 0.1338,
+        "xgboost": 0.1319,
+        "bayes": 0.106,
+        "markov": 0.1202
       },
       "total_count": 137,
       "recent_10": 1,
-      "current_gap": 3,
+      "current_gap": 4,
       "max_gap": 49
     },
     {
       "number": 10,
-      "score": 0.1343,
+      "score": 0.1339,
       "models": {
-        "weighted": 0.1332,
-        "xgboost": 0.1332,
-        "bayes": 0.123,
-        "markov": 0.1332
+        "weighted": 0.1336,
+        "xgboost": 0.1344,
+        "bayes": 0.1262,
+        "markov": 0.1228
       },
       "total_count": 163,
-      "recent_10": 2,
-      "current_gap": 4,
+      "recent_10": 1,
+      "current_gap": 5,
       "max_gap": 46
     },
     {
       "number": 11,
-      "score": 0.1348,
+      "score": 0.1338,
       "models": {
-        "weighted": 0.1332,
+        "weighted": 0.1331,
         "xgboost": 0.1342,
-        "bayes": 0.1209,
-        "markov": 0.1238
+        "bayes": 0.126,
+        "markov": 0.1237
       },
       "total_count": 168,
       "recent_10": 2,
-      "current_gap": 6,
+      "current_gap": 7,
       "max_gap": 40
     },
     {
       "number": 12,
-      "score": 0.1322,
+      "score": 0.1323,
       "models": {
-        "weighted": 0.1335,
-        "xgboost": 0.1318,
-        "bayes": 0.1415,
-        "markov": 0.1433
+        "weighted": 0.1336,
+        "xgboost": 0.1317,
+        "bayes": 0.1501,
+        "markov": 0.1432
       },
       "total_count": 180,
       "recent_10": 0,
-      "current_gap": 10,
+      "current_gap": 11,
       "max_gap": 30
     },
     {
       "number": 13,
-      "score": 0.1321,
+      "score": 0.1326,
       "models": {
-        "weighted": 0.1324,
-        "xgboost": 0.1334,
-        "bayes": 0.1578,
-        "markov": 0.1111
+        "weighted": 0.1321,
+        "xgboost": 0.1314,
+        "bayes": 0.1557,
+        "markov": 0.111
       },
       "total_count": 184,
       "recent_10": 5,
-      "current_gap": 2,
+      "current_gap": 3,
       "max_gap": 33
     },
     {
       "number": 14,
-      "score": 0.1338,
+      "score": 0.1326,
       "models": {
-        "weighted": 0.1336,
-        "xgboost": 0.1345,
-        "bayes": 0.1299,
-        "markov": 0.1266
+        "weighted": 0.1334,
+        "xgboost": 0.1337,
+        "bayes": 0.1432,
+        "markov": 0.1371
       },
-      "total_count": 172,
-      "recent_10": 0,
-      "current_gap": 15,
+      "total_count": 173,
+      "recent_10": 1,
+      "current_gap": 0,
       "max_gap": 38
     },
     {
       "number": 15,
-      "score": 0.1324,
+      "score": 0.1325,
       "models": {
         "weighted": 0.1335,
-        "xgboost": 0.1347,
-        "bayes": 0.1426,
-        "markov": 0.1325
+        "xgboost": 0.1335,
+        "bayes": 0.1483,
+        "markov": 0.1324
       },
       "total_count": 170,
       "recent_10": 0,
-      "current_gap": 11,
+      "current_gap": 12,
       "max_gap": 37
     },
     {
@@ -313,427 +313,427 @@
       "score": 0.1335,
       "models": {
         "weighted": 0.133,
-        "xgboost": 0.135,
-        "bayes": 0.1313,
-        "markov": 0.1303
+        "xgboost": 0.1334,
+        "bayes": 0.1309,
+        "markov": 0.1302
       },
       "total_count": 171,
       "recent_10": 3,
-      "current_gap": 0,
+      "current_gap": 1,
       "max_gap": 39
     },
     {
       "number": 17,
-      "score": 0.1324,
+      "score": 0.1327,
       "models": {
         "weighted": 0.1336,
-        "xgboost": 0.1339,
-        "bayes": 0.1361,
-        "markov": 0.1472
+        "xgboost": 0.1333,
+        "bayes": 0.1391,
+        "markov": 0.1466
       },
       "total_count": 171,
       "recent_10": 0,
-      "current_gap": 20,
+      "current_gap": 21,
       "max_gap": 39
     },
     {
       "number": 18,
-      "score": 0.1321,
+      "score": 0.1323,
       "models": {
-        "weighted": 0.1328,
-        "xgboost": 0.134,
-        "bayes": 0.1398,
-        "markov": 0.1457
+        "weighted": 0.1326,
+        "xgboost": 0.1343,
+        "bayes": 0.1433,
+        "markov": 0.1456
       },
       "total_count": 180,
       "recent_10": 3,
-      "current_gap": 2,
+      "current_gap": 3,
       "max_gap": 57
     },
     {
       "number": 19,
-      "score": 0.1328,
+      "score": 0.1334,
       "models": {
-        "weighted": 0.1333,
-        "xgboost": 0.1331,
-        "bayes": 0.1378,
-        "markov": 0.1356
+        "weighted": 0.1332,
+        "xgboost": 0.1328,
+        "bayes": 0.1323,
+        "markov": 0.1355
       },
       "total_count": 171,
       "recent_10": 1,
-      "current_gap": 6,
+      "current_gap": 7,
       "max_gap": 41
     },
     {
       "number": 20,
-      "score": 0.1327,
+      "score": 0.1332,
       "models": {
-        "weighted": 0.1331,
-        "xgboost": 0.1333,
-        "bayes": 0.1477,
-        "markov": 0.1182
+        "weighted": 0.1335,
+        "xgboost": 0.1318,
+        "bayes": 0.1368,
+        "markov": 0.136
       },
       "total_count": 172,
-      "recent_10": 2,
-      "current_gap": 6,
+      "recent_10": 1,
+      "current_gap": 7,
       "max_gap": 27
     },
     {
       "number": 21,
-      "score": 0.134,
+      "score": 0.1332,
       "models": {
-        "weighted": 0.1337,
-        "xgboost": 0.1319,
-        "bayes": 0.1215,
-        "markov": 0.1458
+        "weighted": 0.1335,
+        "xgboost": 0.1336,
+        "bayes": 0.1388,
+        "markov": 0.1222
       },
-      "total_count": 167,
-      "recent_10": 0,
-      "current_gap": 10,
+      "total_count": 168,
+      "recent_10": 1,
+      "current_gap": 0,
       "max_gap": 37
     },
     {
       "number": 22,
-      "score": 0.1337,
+      "score": 0.1331,
       "models": {
-        "weighted": 0.1334,
-        "xgboost": 0.1329,
-        "bayes": 0.1271,
-        "markov": 0.1389
+        "weighted": 0.133,
+        "xgboost": 0.1346,
+        "bayes": 0.1205,
+        "markov": 0.18
       },
-      "total_count": 147,
-      "recent_10": 2,
+      "total_count": 148,
+      "recent_10": 3,
       "current_gap": 0,
       "max_gap": 50
     },
     {
       "number": 23,
-      "score": 0.1355,
+      "score": 0.1344,
       "models": {
-        "weighted": 0.1332,
-        "xgboost": 0.1365,
-        "bayes": 0.1173,
-        "markov": 0.1138
+        "weighted": 0.1335,
+        "xgboost": 0.1341,
+        "bayes": 0.1143,
+        "markov": 0.1353
       },
       "total_count": 150,
-      "recent_10": 3,
-      "current_gap": 0,
+      "recent_10": 2,
+      "current_gap": 1,
       "max_gap": 48
     },
     {
       "number": 24,
-      "score": 0.1336,
+      "score": 0.1333,
       "models": {
         "weighted": 0.133,
-        "xgboost": 0.1337,
-        "bayes": 0.1327,
-        "markov": 0.1268
+        "xgboost": 0.1342,
+        "bayes": 0.1338,
+        "markov": 0.1267
       },
       "total_count": 169,
       "recent_10": 3,
-      "current_gap": 0,
+      "current_gap": 1,
       "max_gap": 41
     },
     {
       "number": 25,
-      "score": 0.1349,
+      "score": 0.1343,
       "models": {
         "weighted": 0.1335,
-        "xgboost": 0.1329,
-        "bayes": 0.1229,
-        "markov": 0.1206
+        "xgboost": 0.1335,
+        "bayes": 0.1219,
+        "markov": 0.1205
       },
       "total_count": 154,
       "recent_10": 1,
-      "current_gap": 1,
+      "current_gap": 2,
       "max_gap": 53
     },
     {
       "number": 26,
-      "score": 0.1329,
+      "score": 0.134,
       "models": {
-        "weighted": 0.1335,
-        "xgboost": 0.1331,
-        "bayes": 0.1359,
-        "markov": 0.1377
+        "weighted": 0.1336,
+        "xgboost": 0.1336,
+        "bayes": 0.1201,
+        "markov": 0.1376
       },
       "total_count": 166,
       "recent_10": 1,
-      "current_gap": 2,
+      "current_gap": 3,
       "max_gap": 33
     },
     {
       "number": 27,
-      "score": 0.1305,
+      "score": 0.1329,
       "models": {
         "weighted": 0.1334,
-        "xgboost": 0.1325,
-        "bayes": 0.1635,
-        "markov": 0.1404
+        "xgboost": 0.1329,
+        "bayes": 0.1383,
+        "markov": 0.1403
       },
       "total_count": 182,
       "recent_10": 1,
-      "current_gap": 0,
+      "current_gap": 1,
       "max_gap": 43
     },
     {
       "number": 28,
       "score": 0.1338,
       "models": {
-        "weighted": 0.1332,
-        "xgboost": 0.133,
-        "bayes": 0.138,
-        "markov": 0.1139
+        "weighted": 0.1331,
+        "xgboost": 0.1331,
+        "bayes": 0.1315,
+        "markov": 0.1138
       },
       "total_count": 159,
       "recent_10": 2,
-      "current_gap": 0,
+      "current_gap": 1,
       "max_gap": 38
     },
     {
       "number": 29,
-      "score": 0.1353,
+      "score": 0.1343,
       "models": {
-        "weighted": 0.1336,
-        "xgboost": 0.132,
-        "bayes": 0.1177,
-        "markov": 0.1253
+        "weighted": 0.1338,
+        "xgboost": 0.1317,
+        "bayes": 0.1229,
+        "markov": 0.1252
       },
       "total_count": 156,
       "recent_10": 0,
-      "current_gap": 10,
+      "current_gap": 11,
       "max_gap": 34
     },
     {
       "number": 30,
-      "score": 0.1333,
+      "score": 0.1332,
       "models": {
         "weighted": 0.1337,
-        "xgboost": 0.1347,
-        "bayes": 0.1355,
-        "markov": 0.1267
+        "xgboost": 0.1338,
+        "bayes": 0.1368,
+        "markov": 0.1266
       },
       "total_count": 158,
       "recent_10": 0,
-      "current_gap": 18,
+      "current_gap": 19,
       "max_gap": 41
     },
     {
       "number": 31,
-      "score": 0.1325,
+      "score": 0.1333,
       "models": {
         "weighted": 0.1331,
-        "xgboost": 0.1329,
-        "bayes": 0.1416,
-        "markov": 0.1348
+        "xgboost": 0.1333,
+        "bayes": 0.1319,
+        "markov": 0.1347
       },
       "total_count": 171,
       "recent_10": 2,
-      "current_gap": 4,
+      "current_gap": 5,
       "max_gap": 29
     },
     {
       "number": 32,
-      "score": 0.1355,
+      "score": 0.1352,
       "models": {
-        "weighted": 0.1332,
-        "xgboost": 0.1333,
-        "bayes": 0.1172,
-        "markov": 0.1183
+        "weighted": 0.133,
+        "xgboost": 0.1329,
+        "bayes": 0.1094,
+        "markov": 0.1182
       },
       "total_count": 147,
       "recent_10": 3,
-      "current_gap": 1,
+      "current_gap": 2,
       "max_gap": 41
     },
     {
       "number": 33,
-      "score": 0.1317,
+      "score": 0.1328,
       "models": {
-        "weighted": 0.1335,
-        "xgboost": 0.1327,
-        "bayes": 0.1487,
-        "markov": 0.1384
+        "weighted": 0.1334,
+        "xgboost": 0.1336,
+        "bayes": 0.1408,
+        "markov": 0.1383
       },
       "total_count": 175,
       "recent_10": 1,
-      "current_gap": 7,
+      "current_gap": 8,
       "max_gap": 45
     },
     {
       "number": 34,
-      "score": 0.1312,
+      "score": 0.1315,
       "models": {
         "weighted": 0.133,
-        "xgboost": 0.1332,
-        "bayes": 0.1442,
-        "markov": 0.1611
+        "xgboost": 0.1366,
+        "bayes": 0.1575,
+        "markov": 0.1414
       },
       "total_count": 187,
-      "recent_10": 2,
-      "current_gap": 2,
+      "recent_10": 1,
+      "current_gap": 3,
       "max_gap": 42
     },
     {
       "number": 35,
-      "score": 0.1335,
+      "score": 0.1336,
       "models": {
         "weighted": 0.1337,
-        "xgboost": 0.133,
-        "bayes": 0.1263,
-        "markov": 0.1445
+        "xgboost": 0.1334,
+        "bayes": 0.1262,
+        "markov": 0.1444
       },
       "total_count": 163,
       "recent_10": 0,
-      "current_gap": 12,
+      "current_gap": 13,
       "max_gap": 30
     },
     {
       "number": 36,
-      "score": 0.1323,
+      "score": 0.1322,
       "models": {
         "weighted": 0.1334,
-        "xgboost": 0.1329,
-        "bayes": 0.1402,
-        "markov": 0.1425
+        "xgboost": 0.1327,
+        "bayes": 0.1512,
+        "markov": 0.1423
       },
       "total_count": 165,
       "recent_10": 1,
-      "current_gap": 7,
+      "current_gap": 8,
       "max_gap": 34
     },
     {
       "number": 37,
-      "score": 0.1327,
+      "score": 0.1332,
       "models": {
-        "weighted": 0.1333,
-        "xgboost": 0.1327,
-        "bayes": 0.1435,
-        "markov": 0.1273
+        "weighted": 0.1335,
+        "xgboost": 0.132,
+        "bayes": 0.1347,
+        "markov": 0.1444
       },
       "total_count": 174,
-      "recent_10": 1,
-      "current_gap": 9,
+      "recent_10": 0,
+      "current_gap": 10,
       "max_gap": 35
     },
     {
       "number": 38,
-      "score": 0.1337,
+      "score": 0.1336,
       "models": {
         "weighted": 0.1329,
-        "xgboost": 0.1319,
+        "xgboost": 0.1321,
         "bayes": 0.1271,
-        "markov": 0.1388
+        "markov": 0.1387
       },
       "total_count": 174,
       "recent_10": 3,
-      "current_gap": 2,
+      "current_gap": 3,
       "max_gap": 32
     },
     {
       "number": 39,
-      "score": 0.1342,
+      "score": 0.1336,
       "models": {
         "weighted": 0.1336,
-        "xgboost": 0.1331,
-        "bayes": 0.1331,
+        "xgboost": 0.1337,
+        "bayes": 0.1336,
         "markov": 0.1151
       },
       "total_count": 168,
       "recent_10": 0,
-      "current_gap": 11,
+      "current_gap": 12,
       "max_gap": 48
     },
     {
       "number": 40,
-      "score": 0.1331,
+      "score": 0.1334,
       "models": {
-        "weighted": 0.1333,
-        "xgboost": 0.1329,
-        "bayes": 0.1346,
-        "markov": 0.1355
+        "weighted": 0.1337,
+        "xgboost": 0.1325,
+        "bayes": 0.1382,
+        "markov": 0.121
       },
       "total_count": 174,
-      "recent_10": 1,
-      "current_gap": 9,
+      "recent_10": 0,
+      "current_gap": 10,
       "max_gap": 59
     },
     {
       "number": 41,
-      "score": 0.1348,
+      "score": 0.1341,
       "models": {
         "weighted": 0.1336,
-        "xgboost": 0.1334,
-        "bayes": 0.1245,
-        "markov": 0.1182
+        "xgboost": 0.1337,
+        "bayes": 0.1254,
+        "markov": 0.1181
       },
       "total_count": 151,
       "recent_10": 1,
-      "current_gap": 4,
+      "current_gap": 5,
       "max_gap": 31
     },
     {
       "number": 42,
       "score": 0.1342,
       "models": {
-        "weighted": 0.1332,
-        "xgboost": 0.1331,
-        "bayes": 0.1268,
-        "markov": 0.1268
+        "weighted": 0.1329,
+        "xgboost": 0.1315,
+        "bayes": 0.1295,
+        "markov": 0.109
       },
-      "total_count": 159,
-      "recent_10": 2,
-      "current_gap": 1,
+      "total_count": 160,
+      "recent_10": 3,
+      "current_gap": 0,
       "max_gap": 36
     },
     {
       "number": 43,
-      "score": 0.1346,
+      "score": 0.1341,
       "models": {
-        "weighted": 0.1332,
-        "xgboost": 0.1337,
-        "bayes": 0.1222,
-        "markov": 0.1275
+        "weighted": 0.1331,
+        "xgboost": 0.1341,
+        "bayes": 0.1211,
+        "markov": 0.1277
       },
       "total_count": 167,
       "recent_10": 2,
-      "current_gap": 3,
+      "current_gap": 4,
       "max_gap": 38
     },
     {
       "number": 44,
-      "score": 0.1342,
+      "score": 0.1336,
       "models": {
-        "weighted": 0.1331,
-        "xgboost": 0.1335,
-        "bayes": 0.1211,
-        "markov": 0.1393
+        "weighted": 0.1332,
+        "xgboost": 0.1341,
+        "bayes": 0.1255,
+        "markov": 0.1392
       },
       "total_count": 166,
       "recent_10": 2,
-      "current_gap": 3,
+      "current_gap": 4,
       "max_gap": 38
     },
     {
       "number": 45,
-      "score": 0.1321,
+      "score": 0.1324,
       "models": {
-        "weighted": 0.1335,
-        "xgboost": 0.1341,
-        "bayes": 0.1392,
-        "markov": 0.1486
+        "weighted": 0.1333,
+        "xgboost": 0.1325,
+        "bayes": 0.1493,
+        "markov": 0.1357
       },
-      "total_count": 175,
-      "recent_10": 0,
-      "current_gap": 22,
+      "total_count": 176,
+      "recent_10": 1,
+      "current_gap": 0,
       "max_gap": 38
     }
   ],
   "backtest": {
     "rounds_tested": 200,
-    "avg_matches": 0.813,
+    "avg_matches": 0.812,
     "random_avg_matches": 0.8,
-    "hit3_rate": 0.029,
+    "hit3_rate": 0.027,
     "random_hit3_rate": 0.0238,
     "logloss": 0.39274,
     "random_logloss": 0.3927,
@@ -744,108 +744,108 @@
     "base": "ensemble",
     "optimizer": "coverage4",
     "reason": "어떤 방법도 무작위보다 유의하게 좋지 않아 기본값(ensemble)을 사용",
-    "p_any_ge3": 0.115411,
-    "p_any_ge4": 0.006963
+    "p_any_ge3": 0.114196,
+    "p_any_ge4": 0.0069586
   },
   "sets": {
     "5": [
       {
         "rank": 1,
         "numbers": [
+          4,
           9,
-          23,
           24,
-          30,
-          41,
-          42
+          32,
+          33,
+          43
         ],
-        "fitness": 0.8082,
-        "score_sum": 0.8082,
-        "sum": 169,
+        "fitness": 0.8037,
+        "score_sum": 0.8037,
+        "sum": 145,
         "odd_even": "3:3",
-        "low_high": "1:5"
+        "low_high": "2:4"
       },
       {
         "rank": 2,
         "numbers": [
-          10,
-          11,
-          14,
-          22,
-          32,
-          41
+          5,
+          7,
+          9,
+          20,
+          35,
+          42
         ],
-        "fitness": 0.8069,
-        "score_sum": 0.8069,
-        "sum": 130,
-        "odd_even": "2:4",
+        "fitness": 0.8033,
+        "score_sum": 0.8033,
+        "sum": 118,
+        "odd_even": "4:2",
         "low_high": "4:2"
       },
       {
         "rank": 3,
         "numbers": [
-          2,
-          4,
-          17,
+          3,
+          6,
+          31,
           32,
           37,
           43
         ],
-        "fitness": 0.8018,
-        "score_sum": 0.8018,
-        "sum": 135,
-        "odd_even": "3:3",
-        "low_high": "3:3"
+        "fitness": 0.8012,
+        "score_sum": 0.8012,
+        "sum": 152,
+        "odd_even": "4:2",
+        "low_high": "2:4"
       },
       {
         "rank": 4,
         "numbers": [
-          8,
+          3,
           11,
-          12,
+          16,
+          23,
           26,
-          35,
           45
         ],
-        "fitness": 0.8006,
-        "score_sum": 0.8006,
-        "sum": 137,
-        "odd_even": "3:3",
+        "fitness": 0.8004,
+        "score_sum": 0.8004,
+        "sum": 124,
+        "odd_even": "4:2",
         "low_high": "3:3"
       },
       {
         "rank": 5,
         "numbers": [
-          1,
           4,
+          7,
           17,
-          27,
-          39,
+          19,
+          38,
           42
         ],
-        "fitness": 0.7964,
-        "score_sum": 0.7964,
-        "sum": 130,
-        "odd_even": "4:2",
-        "low_high": "3:3"
+        "fitness": 0.7995,
+        "score_sum": 0.7995,
+        "sum": 127,
+        "odd_even": "3:3",
+        "low_high": "4:2"
       }
     ],
     "10": [
       {
         "rank": 1,
         "numbers": [
-          8,
           9,
           23,
           25,
           29,
-          32
+          32,
+          42
         ],
-        "fitness": 0.8131,
-        "score_sum": 0.8131,
-        "sum": 126,
+        "fitness": 0.8079,
+        "score_sum": 0.8079,
+        "sum": 160,
         "odd_even": "4:2",
-        "low_high": "2:4"
+        "low_high": "1:5"
       },
       {
         "rank": 2,
@@ -853,161 +853,161 @@
           5,
           10,
           11,
+          26,
           41,
-          43,
-          44
+          43
         ],
-        "fitness": 0.8068,
-        "score_sum": 0.8068,
-        "sum": 154,
+        "fitness": 0.804,
+        "score_sum": 0.804,
+        "sum": 136,
         "odd_even": "4:2",
         "low_high": "3:3"
       },
       {
         "rank": 3,
         "numbers": [
-          2,
-          20,
-          23,
+          5,
+          22,
           30,
+          32,
           39,
-          41
+          44
         ],
-        "fitness": 0.8041,
-        "score_sum": 0.8041,
-        "sum": 155,
-        "odd_even": "3:3",
+        "fitness": 0.8029,
+        "score_sum": 0.8029,
+        "sum": 172,
+        "odd_even": "2:4",
         "low_high": "2:4"
       },
       {
         "rank": 4,
         "numbers": [
-          14,
-          21,
-          22,
+          2,
+          16,
+          28,
+          35,
           38,
-          39,
-          42
+          39
         ],
-        "fitness": 0.8035,
-        "score_sum": 0.8035,
-        "sum": 176,
+        "fitness": 0.8016,
+        "score_sum": 0.8016,
+        "sum": 158,
         "odd_even": "2:4",
-        "low_high": "3:3"
+        "low_high": "2:4"
       },
       {
         "rank": 5,
         "numbers": [
           4,
-          21,
-          28,
-          31,
-          32,
+          20,
+          23,
+          38,
+          40,
           43
         ],
-        "fitness": 0.8034,
-        "score_sum": 0.8034,
-        "sum": 159,
-        "odd_even": "3:3",
+        "fitness": 0.8016,
+        "score_sum": 0.8016,
+        "sum": 168,
+        "odd_even": "2:4",
         "low_high": "2:4"
       },
       {
         "rank": 6,
         "numbers": [
-          2,
-          7,
-          16,
+          6,
+          19,
           24,
-          28,
-          35
+          31,
+          40,
+          44
         ],
-        "fitness": 0.801,
-        "score_sum": 0.801,
-        "sum": 112,
+        "fitness": 0.8001,
+        "score_sum": 0.8001,
+        "sum": 164,
         "odd_even": "2:4",
-        "low_high": "3:3"
+        "low_high": "2:4"
       },
       {
         "rank": 7,
         "numbers": [
           3,
-          6,
           9,
-          11,
-          27,
-          42
+          28,
+          34,
+          36,
+          41
         ],
-        "fitness": 0.7979,
-        "score_sum": 0.7979,
-        "sum": 98,
-        "odd_even": "4:2",
-        "low_high": "4:2"
+        "fitness": 0.7994,
+        "score_sum": 0.7994,
+        "sum": 151,
+        "odd_even": "3:3",
+        "low_high": "2:4"
       },
       {
         "rank": 8,
         "numbers": [
-          4,
-          19,
-          26,
+          8,
+          20,
+          21,
+          27,
           30,
-          37,
-          40
+          37
         ],
-        "fitness": 0.7977,
-        "score_sum": 0.7977,
-        "sum": 156,
-        "odd_even": "2:4",
-        "low_high": "2:4"
+        "fitness": 0.7987,
+        "score_sum": 0.7987,
+        "sum": 143,
+        "odd_even": "3:3",
+        "low_high": "3:3"
       },
       {
         "rank": 9,
         "numbers": [
-          15,
+          4,
+          13,
+          14,
           17,
-          20,
-          31,
-          36,
-          45
+          22,
+          33
         ],
-        "fitness": 0.7943,
-        "score_sum": 0.7943,
-        "sum": 164,
-        "odd_even": "4:2",
-        "low_high": "3:3"
+        "fitness": 0.7968,
+        "score_sum": 0.7968,
+        "sum": 103,
+        "odd_even": "3:3",
+        "low_high": "5:1"
       },
       {
         "rank": 10,
         "numbers": [
           1,
+          7,
           12,
-          13,
+          15,
           18,
-          33,
-          34
+          45
         ],
-        "fitness": 0.7915,
-        "score_sum": 0.7915,
-        "sum": 111,
-        "odd_even": "3:3",
-        "low_high": "4:2"
+        "fitness": 0.7949,
+        "score_sum": 0.7949,
+        "sum": 98,
+        "odd_even": "4:2",
+        "low_high": "5:1"
       }
     ],
     "20": [
       {
         "rank": 1,
         "numbers": [
-          8,
           9,
           23,
           25,
           29,
-          32
+          32,
+          42
         ],
-        "fitness": 0.8131,
-        "score_sum": 0.8131,
-        "sum": 126,
+        "fitness": 0.8079,
+        "score_sum": 0.8079,
+        "sum": 160,
         "odd_even": "4:2",
-        "low_high": "2:4"
+        "low_high": "1:5"
       },
       {
         "rank": 2,
@@ -1015,303 +1015,303 @@
           5,
           10,
           11,
+          26,
           41,
-          43,
-          44
+          43
         ],
-        "fitness": 0.8068,
-        "score_sum": 0.8068,
-        "sum": 154,
+        "fitness": 0.804,
+        "score_sum": 0.804,
+        "sum": 136,
         "odd_even": "4:2",
         "low_high": "3:3"
       },
       {
         "rank": 3,
         "numbers": [
-          2,
-          20,
-          23,
+          5,
+          22,
           30,
+          32,
           39,
-          41
+          44
         ],
-        "fitness": 0.8041,
-        "score_sum": 0.8041,
-        "sum": 155,
-        "odd_even": "3:3",
+        "fitness": 0.8029,
+        "score_sum": 0.8029,
+        "sum": 172,
+        "odd_even": "2:4",
         "low_high": "2:4"
       },
       {
         "rank": 4,
         "numbers": [
+          2,
           9,
-          13,
-          21,
-          24,
           30,
-          44
+          31,
+          43,
+          45
         ],
-        "fitness": 0.8039,
-        "score_sum": 0.8039,
-        "sum": 141,
-        "odd_even": "3:3",
-        "low_high": "3:3"
+        "fitness": 0.8021,
+        "score_sum": 0.8021,
+        "sum": 160,
+        "odd_even": "4:2",
+        "low_high": "2:4"
       },
       {
         "rank": 5,
         "numbers": [
-          14,
-          21,
-          22,
+          2,
+          16,
+          28,
+          35,
           38,
-          39,
-          42
+          39
         ],
-        "fitness": 0.8035,
-        "score_sum": 0.8035,
-        "sum": 176,
+        "fitness": 0.8016,
+        "score_sum": 0.8016,
+        "sum": 158,
         "odd_even": "2:4",
-        "low_high": "3:3"
+        "low_high": "2:4"
       },
       {
         "rank": 6,
         "numbers": [
           4,
-          21,
-          28,
-          31,
-          32,
+          20,
+          23,
+          38,
+          40,
           43
         ],
-        "fitness": 0.8034,
-        "score_sum": 0.8034,
-        "sum": 159,
-        "odd_even": "3:3",
+        "fitness": 0.8016,
+        "score_sum": 0.8016,
+        "sum": 168,
+        "odd_even": "2:4",
         "low_high": "2:4"
       },
       {
         "rank": 7,
         "numbers": [
-          10,
-          14,
-          17,
-          24,
-          29,
-          40
+          4,
+          6,
+          21,
+          39,
+          41,
+          42
         ],
-        "fitness": 0.8024,
-        "score_sum": 0.8024,
-        "sum": 134,
-        "odd_even": "2:4",
+        "fitness": 0.8012,
+        "score_sum": 0.8012,
+        "sum": 153,
+        "odd_even": "3:3",
         "low_high": "3:3"
       },
       {
         "rank": 8,
         "numbers": [
-          8,
-          11,
-          22,
-          28,
-          33,
-          40
+          2,
+          19,
+          21,
+          26,
+          29,
+          33
         ],
-        "fitness": 0.8021,
-        "score_sum": 0.8021,
-        "sum": 142,
-        "odd_even": "2:4",
+        "fitness": 0.8011,
+        "score_sum": 0.8011,
+        "sum": 130,
+        "odd_even": "4:2",
         "low_high": "3:3"
       },
       {
         "rank": 9,
         "numbers": [
-          8,
-          15,
-          26,
+          10,
+          17,
+          24,
+          25,
           35,
-          38,
-          44
+          37
         ],
-        "fitness": 0.8017,
-        "score_sum": 0.8017,
-        "sum": 166,
-        "odd_even": "2:4",
+        "fitness": 0.8009,
+        "score_sum": 0.8009,
+        "sum": 148,
+        "odd_even": "4:2",
         "low_high": "2:4"
       },
       {
         "rank": 10,
         "numbers": [
-          5,
-          16,
+          11,
+          18,
           22,
           25,
-          36,
-          37
+          28,
+          40
         ],
-        "fitness": 0.8011,
-        "score_sum": 0.8011,
-        "sum": 141,
-        "odd_even": "3:3",
+        "fitness": 0.8008,
+        "score_sum": 0.8008,
+        "sum": 144,
+        "odd_even": "2:4",
         "low_high": "3:3"
       },
       {
         "rank": 11,
         "numbers": [
-          2,
           7,
+          8,
+          11,
           16,
-          24,
-          28,
-          35
-        ],
-        "fitness": 0.801,
-        "score_sum": 0.801,
-        "sum": 112,
-        "odd_even": "2:4",
-        "low_high": "3:3"
-      },
-      {
-        "rank": 12,
-        "numbers": [
-          4,
-          7,
-          10,
-          25,
-          34,
+          31,
           42
         ],
         "fitness": 0.8006,
         "score_sum": 0.8006,
-        "sum": 122,
+        "sum": 115,
+        "odd_even": "3:3",
+        "low_high": "4:2"
+      },
+      {
+        "rank": 12,
+        "numbers": [
+          6,
+          19,
+          24,
+          31,
+          40,
+          44
+        ],
+        "fitness": 0.8001,
+        "score_sum": 0.8001,
+        "sum": 164,
         "odd_even": "2:4",
-        "low_high": "3:3"
+        "low_high": "2:4"
       },
       {
         "rank": 13,
         "numbers": [
-          1,
-          14,
-          27,
-          32,
+          15,
+          23,
+          26,
+          34,
           35,
-          41
+          44
         ],
-        "fitness": 0.8003,
-        "score_sum": 0.8003,
-        "sum": 150,
-        "odd_even": "4:2",
-        "low_high": "2:4"
+        "fitness": 0.7995,
+        "score_sum": 0.7995,
+        "sum": 177,
+        "odd_even": "3:3",
+        "low_high": "1:5"
       },
       {
         "rank": 14,
         "numbers": [
           3,
-          16,
-          18,
-          29,
-          39,
-          43
+          9,
+          28,
+          34,
+          36,
+          41
         ],
         "fitness": 0.7994,
         "score_sum": 0.7994,
-        "sum": 148,
-        "odd_even": "4:2",
-        "low_high": "3:3"
+        "sum": 151,
+        "odd_even": "3:3",
+        "low_high": "2:4"
       },
       {
         "rank": 15,
         "numbers": [
-          2,
+          3,
           5,
+          12,
           13,
-          19,
-          31,
+          29,
           38
         ],
-        "fitness": 0.7988,
-        "score_sum": 0.7988,
-        "sum": 108,
+        "fitness": 0.7993,
+        "score_sum": 0.7993,
+        "sum": 100,
         "odd_even": "4:2",
         "low_high": "4:2"
       },
       {
         "rank": 16,
         "numbers": [
-          3,
-          6,
-          9,
-          11,
+          8,
+          20,
+          21,
           27,
-          42
+          30,
+          37
         ],
-        "fitness": 0.7979,
-        "score_sum": 0.7979,
-        "sum": 98,
-        "odd_even": "4:2",
-        "low_high": "4:2"
+        "fitness": 0.7987,
+        "score_sum": 0.7987,
+        "sum": 143,
+        "odd_even": "3:3",
+        "low_high": "3:3"
       },
       {
         "rank": 17,
         "numbers": [
-          4,
-          19,
-          26,
-          30,
-          37,
-          40
+          1,
+          6,
+          14,
+          27,
+          32,
+          36
         ],
-        "fitness": 0.7977,
-        "score_sum": 0.7977,
-        "sum": 156,
+        "fitness": 0.7987,
+        "score_sum": 0.7987,
+        "sum": 116,
         "odd_even": "2:4",
-        "low_high": "2:4"
+        "low_high": "3:3"
       },
       {
         "rank": 18,
         "numbers": [
-          6,
-          7,
-          12,
+          10,
+          13,
+          16,
           19,
-          23,
+          27,
           45
         ],
-        "fitness": 0.7975,
-        "score_sum": 0.7975,
-        "sum": 112,
+        "fitness": 0.7986,
+        "score_sum": 0.7986,
+        "sum": 130,
         "odd_even": "4:2",
         "low_high": "4:2"
       },
       {
         "rank": 19,
         "numbers": [
-          15,
+          4,
+          13,
+          14,
           17,
-          20,
-          31,
-          36,
-          45
+          22,
+          33
         ],
-        "fitness": 0.7943,
-        "score_sum": 0.7943,
-        "sum": 164,
-        "odd_even": "4:2",
-        "low_high": "3:3"
+        "fitness": 0.7968,
+        "score_sum": 0.7968,
+        "sum": 103,
+        "odd_even": "3:3",
+        "low_high": "5:1"
       },
       {
         "rank": 20,
         "numbers": [
           1,
+          7,
           12,
-          13,
+          15,
           18,
-          33,
-          34
+          45
         ],
-        "fitness": 0.7915,
-        "score_sum": 0.7915,
-        "sum": 111,
-        "odd_even": "3:3",
-        "low_high": "4:2"
+        "fitness": 0.7949,
+        "score_sum": 0.7949,
+        "sum": 98,
+        "odd_even": "4:2",
+        "low_high": "5:1"
       }
     ]
   },
@@ -1376,7 +1376,7 @@
     ],
     "pair_shrinkage_k": 1000.0
   },
-  "strategy": "목표는 4등 이상(4개 이상 일치)입니다. ensemble 점수(번호별 확률: 빈도·간격·이월·이웃·마르코프 등 결합)와 인기 패턴 감점, 번호 쌍 동반 출현(궁합) 항은 검증에서 효과가 없어 가중치 0 으로 둔 적합도 상위 조합에서, 게임끼리 번호를 최대 3개까지만 공유하도록 묶음을 만듭니다. 공유를 3개로 제한하면 두 게임이 같은 4개 번호로 동시에 4등이 되는 중복이 없어 '적어도 한 게임 4개 이상 일치' 확률이 이론 상한에 가까워집니다. 10·20게임 세트는 45개 번호를 고르게 나눠 쓰고 게임끼리 번호를 1개까지만 공유하게 해, 같은 번호가 여러 게임에 몰려 한꺼번에 빗나가는 일을 줄입니다(점수는 동점일 때만 반영). 이렇게 해도 바뀌는 것은 '적어도 한 게임' 확률뿐이고, 그 대신 여러 게임이 동시에 맞을 확률은 줄어듭니다. 5게임 4개 이상 일치 커버리지 최적화(적어도 한 게임 4개 이상 일치 확률 0.696%, 3개 이상 11.5%), 10게임 번호 고르게 분산(게임 간 공유 1개 이하)(적어도 한 게임 4개 이상 일치 확률 1.393%, 3개 이상 23.0%), 20게임 번호 고르게 분산(게임 간 공유 1개 이하)(적어도 한 게임 4개 이상 일치 확률 2.787%, 3개 이상 42.6%). 단, 게임 하나가 맞을 확률(4개 이상 0.139%, 3개 이상 2.38%)과 기대 당첨 게임 수는 어떤 번호든 같으며, 백테스트에서 무작위보다 유의하게 나은 번호 선택 방법은 확인되지 않았습니다. 과거 1등 조합은 제외합니다.",
+  "strategy": "목표는 4등 이상(4개 이상 일치)입니다. ensemble 점수(번호별 확률: 빈도·간격·이월·이웃·마르코프 등 결합)와 인기 패턴 감점, 번호 쌍 동반 출현(궁합) 항은 검증에서 효과가 없어 가중치 0 으로 둔 적합도 상위 조합에서, 게임끼리 번호를 최대 3개까지만 공유하도록 묶음을 만듭니다. 공유를 3개로 제한하면 두 게임이 같은 4개 번호로 동시에 4등이 되는 중복이 없어 '적어도 한 게임 4개 이상 일치' 확률이 이론 상한에 가까워집니다. 10·20게임 세트는 45개 번호를 고르게 나눠 쓰고 게임끼리 번호를 1개까지만 공유하게 해, 같은 번호가 여러 게임에 몰려 한꺼번에 빗나가는 일을 줄입니다(점수는 동점일 때만 반영). 이렇게 해도 바뀌는 것은 '적어도 한 게임' 확률뿐이고, 그 대신 여러 게임이 동시에 맞을 확률은 줄어듭니다. 5게임 4개 이상 일치 커버리지 최적화(적어도 한 게임 4개 이상 일치 확률 0.696%, 3개 이상 11.4%), 10게임 번호 고르게 분산(게임 간 공유 1개 이하)(적어도 한 게임 4개 이상 일치 확률 1.393%, 3개 이상 23.0%), 20게임 번호 고르게 분산(게임 간 공유 1개 이하)(적어도 한 게임 4개 이상 일치 확률 2.787%, 3개 이상 42.6%). 단, 게임 하나가 맞을 확률(4개 이상 0.139%, 3개 이상 2.38%)과 기대 당첨 게임 수는 어떤 번호든 같으며, 백테스트에서 무작위보다 유의하게 나은 번호 선택 방법은 확인되지 않았습니다. 과거 1등 조합은 제외합니다.",
   "pair_lift": [
     [
       1.0,
