@@ -1,8 +1,51 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-25T00:34:53+09:00",
-  "latest_round": 1247,
+  "generated_at": "2026-11-01T01:59:05+09:00",
+  "latest_round": 1248,
   "draws": [
+    {
+      "round": 1248,
+      "date": "2026-10-31",
+      "numbers": [
+        16,
+        18,
+        27,
+        36,
+        38,
+        42
+      ],
+      "bonus": 22,
+      "first_prize_amount": 1933658450,
+      "first_winners": 15,
+      "prizes": [
+        {
+          "rank": 1,
+          "amount": 1933658450,
+          "winners": 15
+        },
+        {
+          "rank": 2,
+          "amount": 53122485,
+          "winners": 91
+        },
+        {
+          "rank": 3,
+          "amount": 1480597,
+          "winners": 3265
+        },
+        {
+          "rank": 4,
+          "amount": 50000,
+          "winners": 167745
+        },
+        {
+          "rank": 5,
+          "amount": 5000,
+          "winners": 2723467
+        }
+      ],
+      "total_sales": 121355508000
+    },
     {
       "round": 1247,
       "date": "2026-10-24",
